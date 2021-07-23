@@ -53,7 +53,7 @@ function initNav() {
 
 function initSearch() {
   var request = new XMLHttpRequest();
-  request.open('GET', 'http://pennlinc.github.io/mobilephenomics/assets/js/search-data.json', true);
+  request.open('GET', 'http://127.0.0.1:4000/executivefunction/assets/js/search-data.json', true);
 
   request.onload = function(){
     if (request.status >= 200 && request.status < 400) {
@@ -430,7 +430,7 @@ jtd.getTheme = function() {
 
 jtd.setTheme = function(theme) {
   var cssFile = document.querySelector('[rel="stylesheet"]');
-  cssFile.setAttribute('href', 'http://pennlinc.github.io/mobilephenomics/assets/css/just-the-docs-' + theme + '.css');
+  cssFile.setAttribute('href', 'http://127.0.0.1:4000/executivefunction/assets/css/just-the-docs-' + theme + '.css');
 }
 
 // Document ready

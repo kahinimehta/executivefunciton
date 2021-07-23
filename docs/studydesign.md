@@ -6,42 +6,72 @@ parent: Study
 has_toc: false
 nav_order: 1
 ---
+# Design 
+This is projected to be a 5-year study, with start date contingent upon IRB approval and an end date of July 1, 2023. All participants will be assessed and imaged twice, however, participants who enroll in the first half of the project period will be able to complete a third session. Thus, participants will be assessed and scanned 2 to 3 times over 5 years in order to observe executive function during a critical period of ongoing brain development (childhood and adolescence). 
+
 
 # Recruitment
-Subjects will be recruited via a variety of means, including posted notices on- and off-campus, Penn’s SBSI platform, announcements on the lab website, social media (Twitter, Facebook, Instagram), online electronic newsgroups, text/email/phone or newspaper advertisements,  CHOP/Penn medical record review and through the Brain Behavior Lab’s registry of previous research participants who have consented to be re-contacted about participating in future research, or by clinician referral from physicians within the Penn Medicine/CHOP system. 
-Target: 2000 participants along with parents of minor participants to participate in virtual procedures. Of these, 500 participants will be asked to come in for non-contrast agent MRI procedures.
+Participants will be recruited using screening mechanisms provided by LiBI (CHOP IRB  #16-013305), a research institute that spans both CHOP and Penn.   
+- Target: 180 adolescents, including 65 with ADHD and 65 with PS, as well as 50 typically-developing comparators
+- Patients (n=126 total) will be drawn from two clinical groups with well-documented executive deficits: ADHD and PS (n=63 per group).  Both patient groups and typically-developing comparators (n=49) will be matched on age, sex, and race.
 
 *Key Inclusion Criteria*:
-- Age: 13-25. 
+- Age: 8-15 (18 by completion of study) 
 - Sex: Males and Females
-- Proficiency in English
-    - Mood and anxiety group: Mood and anxiety group must demonstrate evidence of a mood or anxiety disorder (All ICD codes encompassed by mood/anxiety disorders in DSM (excluding Bipolar Disorder I & II), Borderline personality disorder, Clinically significant affective instability from clinician referrals, Treatment with a SSRI, Elevated PHQ-9 scores administered during standard health system screening.)
-    - Typically Developing Group: No current or documented history DSM IV axis I or II diagnosis, or use of psychoactive medications. 
+- _Patients (n=130)_: 
+     Each participant will meet diagnostic criteria for either ADHD or PS (see Assessment, below).  Given known and substantial co-morbidity between PS and ADHD (i.e., approx. 30% in the PNC), co-morbidity will be allowed and accounted for in specificity analyses. Youth meeting criteria for both PS and ADHD will be considered PS for enrollment purposes. 
+- _Typically developing (n=50)_: 
+     No current or lifetime history of any DSM-V diagnosis or substance use disorder.
+
+
 
 *Key Exclusion Criteria*:
-- Significant medical or neurological illness that may increase risk.
+- Metallic implants, claustrophobia, or other contraindications to MRI
+- Significant medical or neurological illness that impacts brain function or impedes participation
+- Acute intoxication with alcohol or other substances based on clinical assessment or subject report. 
 - Pregnancy
-- Any history of pervasive developmental disorder or intellectual disability
-- Documented history of a psychotic disorder, bipolar disorder, or clinically significant current substance misuse 
-- Non-psychiatric medical disorders that may impact brain function or visual acuity
-- Lack of a mobile device with capabilities to complete study procedures
-- Acute intoxication with alcohol or other substances based on clinical assessment, subject report, or results of laboratory testing
-- For 3T and 7T participants only: contraindications/claustrophobia
+
 
 #  Procedure
-- Participants will perform self-report questionnaires, a neurocognitive battery assessment and both passive and active mobile data collection on the custom-built AWARE App.
-- After consent, participants will be asked to complete a neurocognitive battery online, as well as self-report questionnaires and a computerized adaptive clinical interview.
-- Participants will also be directed to download the AWARE app. There will be 2, 2-week periods of active survey collection 3 times per day, and passive data collection using the AWARE app for 6 months. EMA questions from the app will include questions related to mood, behavior, sleep, or other aspects pertaining to participants’ daily lives.
-- In addition to survey data, AWARE will passively collect information pertaining to accelerometer data, GPS data, phone call and text messaging meta-data, all key-stroke data (with the exception of passwords), and phone/screen usage data. 
-- A subsample of (500) participants will be brought in for imaging procedures.  Imaging visits will last approximately 2-3  hours and will be conducted at Penn/CHOP. 
+The study involves several segments, the procedures for which are addressed separately here. All participants will complete parts 2 and 3 during two separate time-points, while participants who enroll in the first half of the project period will be able to complete an additional third session (also comprised of parts 2 and 3 below).
+
+1. Following pre-screening subjects will receive a reminder call 1 week and 1 day before the appointment, as well as a reminder email or letter. For details please see the attached documents. 
+
+2. Standard Psychiatric and Cognitive Assessment
+Assessment: All subjects will receive detailed assessments to comprehensively evaluate EF capacity in the context of psychiatric diagnosis and document functioning in other cognitive domains. Assessment of youths and collateral information from parents will take place in a single 3-5 hour visit that will be performed within 1 month of neuroimaging. Informed written consent will be obtained from the parent/guardian of the participant, and assent will be obtained from the participant. We will be collecting consent and administering a portion of study procedures electronically, over the phone, or using BlueJeans or similar HIPAA-compliant, IRB and University approved teleconferencing systems.
+- Assessment of EF using a battery of tasks
+- Multi-domain assessment of cognition: Beyond measures of EF, all participants will complete the Penn CNB.
+- Clinical diagnostic assessment: All subjects will receive a detailed diagnostic assessment from highly-trained assessors using a computerized version of the K-SADS interview. As in our prior work, prodromal symptoms of psychosis will be assessed using Structured Interview for Prodromal Symptoms. Furthermore, the Scale of Prodromal Symptoms (SOPS) will be administered along with the SIPS; the SOPS rates the severity of prodromal, psychotic, and other symptoms occurring within the past 6 months.
+
+3. Neuroimaging Protocol
+The imaging visit lasts approximately 4-5 hours. All subjects will undergo longitudinal neuroimaging as part of this study. Images will be acquired in a one-hour session using a research-dedicated 3T Siemens Prisma Scanner. All sequences will be harmonized with the landmark Adolescent Brain Cognitive Development (ABCD) study, to facilitate data pooling and sharing. 
+- Sequences acquired will include T1 and T2 sequences to assess brain structure, diffusion imaging for structural tractography, and fMRI to measure EF activation, functional connectivity, and task-based functional dynamics. As in ABCD, intrinsic connectivity scanning will be broken into four brief (~5 min) runs to reduce in-scanner motion.
+- Prior to scanning, a practice task may be conducted inside a mock scanner environment, which acclimatizes participants to the environment and minimizes novelty effects.
+Preparation for MRI: A brief (5 min) practice task will be conducted inside a decommissioned MRI scanner as part of a mock-scanning session in order to ensure all subjects understand and can perform the task, as well as to acclimatize the subjects, reducing novelty and anxiety responses inside the scanner. Participants will then be prepared for scanning by the investigator and the MRI technician. After assessing state anxiety and mood symptoms, subjects will be placed supine in the scanner, wearing earp
+- Structural and functional scans will be obtained in a single session on a clinically-approved 3 Tesla Siemens Prisma (Erlangen, Germany) scanner, equipped with 80mT/m gradients and 200 mT/m/s slew-rates. RF transmission will use a quadrature body-coil, and reception will use a Siemens receive-only 64-channel head coil. The total time in the scanner will be approximately 1 hour.
+
+4. In addition to scanning, participants may also complete self-report questionnaires and decision-making tasks, outlined below. We will be administering a portion these study procedures electronically, over the phone, or using BlueJeans or similar HIPAA-compliant, IRB and University approved teleconferencing systems.
+
+5. There will also be additional symptom assessments and decision making batteries administered. 
+
 
 # Compensation
-_Participants will be reimbursed for travel (transportation and parking) expenses incurred on scan day._
-_All participants will be paid virtually using Venmo or PayPal applications._
--  Payment for virtual participation: 
-    - AWARE surveys:Subjects will receive $1 per survey they complete during each of the 2 weeks, with a $3 bonus for completing more than 75% of the surveys (up to $24/week.) Subjects will be paid $3 for each month of passive data collection (detailed below) for 6 months (up to $18).
-    - Computerized Neurocognitive Battery (1 hour): Subjects performing cognitive testing with the standard Computerized Neurocognitive Battery (CNB) applied routinely in the Brain Behavior Laboratory will be paid $20.
-    - Self-Report Measures: (1 hour): Subjects will be compensated $10 for completion of proposed surveys assessments. 
-    - **Total compensation possible: $144 over 6 months**
-- Assessments of Decision-making, Reward, Motivation, and Sociability  (1 hour): $40
-- Magnetic Resonance Imaging (1 hour): $60
+## Day 1: Psychiatric and Cognitive Assessment
+ Subject compensation for the clinical assessment and the neurocognitive battery activities for this protocol will be as follows:
+- $40 for the Clinical Evaluation/Assessment (2-4 hours) 
+- $40 for the Computerized Neurocognitive Battery (1 hour) 
+Participants will also be reimbursed for travel expenses (transportation and parking)
+    
+_If a subject appears intoxicated at the time of the visit, we will not continue with the study enrollment procedures and he/she will be paid $10 for their time and travel. Subjects will also be reimbursed for travel expenses (transportation and parking)._
+
+## Day 2: Neuroimaging
+- For the first imaging visit, participants will be paid a flat payment of $100.
+- At the second and/or third time point(s), they will be compensated $150, broken down by type of procedure completed at once, because they may receive more extensive and detailed clinical and behavioral phenotyping therefore adding time and effort to the study visit. Furthermore, the second and/or third timepoint visits may be broken up over two days. At every study visit, participants will also be reimbursed for travel expenses. 
+- If participants complete all study visits, a completion bonus of $150 will be granted. 
+
+ - Imaging Visit 1: flat payment $100 + travel expenses
+
+ - Imaging Visit 2 and/or 3: $60 (MRI) + $20 CNB (long) +$20 decision making tasks + $40 CNB (long) +$10 self-report questions + travel expenses
+
+- Completion bonus (paid on final visit 2 or 3): $150 
+

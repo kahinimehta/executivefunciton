@@ -1,0 +1,16 @@
+I"�<h1 id="project-infrastructure-overview">Project Infrastructure Overview</h1>
+<p>Here we give an overview of the infrastructure used in this project.</p>
+
+<p>For this project, we want to use data collected from people’s mobile devices to learn more about affect, mood, the brain, and behaviour. To accomplish this, we need some way to both passively and actively collect data from their phones safely, efficiently, and with their permission. We already have a very fruitful example of how this can be done and what we can learn, from <a href="https://www.biorxiv.org/content/10.1101/2021.05.17.444568v1">Cedric Xia’s 2021 publication.</a></p>
+
+<p>The solution for this project was initially developed by <a href="http://www.wwbp.org/">Lyle Unghar’s group</a> at the University of Pennsylvania. Much of this project borrows their infrastructure, and so this documentation serves as a replication guide for how to set up the software architecture for a mobile phenotyping project.</p>
+
+<p>The components are as follows:</p>
+
+<ol>
+  <li>The AWARE Framework</li>
+  <li>An accompanying Amazon EC2 Instance</li>
+  <li>An accompanying AWARE backend server</li>
+  <li>Your local data analysis framework and RAPIDS</li>
+</ol>
+:ET

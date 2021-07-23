@@ -1,0 +1,48 @@
+I"s<h1 id="the-aware-framework">The AWARE Framework</h1>
+<hr />
+<p>AWARE is a framework dedicated to instrument, infer, log and share mobile context information by sensor instrumentation, for application developers, researchers and smartphone users. AWARE captures hardware-, software-, and human-based data from smartphones. The data is then analyzed using AWARE plugins. They transform data into information you can understand.</p>
+<p style="text-align:center;"> <a href="https://awareframework.com/"> - AWARE framework website</a></p>
+
+<hr />
+
+<p>In short, AWARE is a software suite that handles the collection of mobile data. It was developed by the  <a href="http://www.wwbp.org/"> World Well-Being Project</a>, of which UPenn is a collaborator with Lyle Unghar. If you want to set up a mobile phenotyping project at UPenn, their group is who to reach out to.</p>
+
+<p>AWARE presents to participants (users) as a mobile app that can be installed on participants’ devices by sharing a URL. Once installed, the app monitors different data streams depending on what the <em>study</em> has configured.</p>
+
+<h2 id="studies--the-aware-dashboard">Studies &amp; The AWARE Dashboard</h2>
+<p>Studies are configured by developers in the lab. Once you’ve approved a project with WWBP, they will set up an AWARE <em>site</em> for you. This will be the management home of your project that you can access online — the <em>AWARE Dashboard</em>. In our case, the URL we were able to visit for managing studies is https://aware-dev2.wwbp.org/index.php/. Once your site is online, you may sign in with (in our case) a Google account, which will take you to this landing page:
+<img src="../../assets/images/aware_site.png" alt="Aware site" /></p>
+
+<h2 id="creating-study">Creating Study</h2>
+<p>To get started, click <code class="language-plaintext highlighter-rouge">Create Study</code>. You’ll be directed to this page:
+<img src="../../assets/images/create_study.png" alt="Create study" /></p>
+
+<p>Fill in the relevant details, and for the <code class="language-plaintext highlighter-rouge">Study Database</code> select <code class="language-plaintext highlighter-rouge">This server</code> (we’ll talk more about servers in the Amazon EC2 section, but this basically means that whatever <em>site</em> was configured for your use will send its data to the machine created for you).</p>
+
+<p>From here, the study will be available as below:
+<img src="../../assets/images/empty_project.png" alt="Empty project" /></p>
+
+<h2 id="configuring-studies">Configuring Studies</h2>
+
+<p>At this point, you will likely want to figure out how to add data streams to collect. To add a data stream, simply click the <code class="language-plaintext highlighter-rouge">Edit sampling</code> button on the right, and click the data type you’d like to collect. Click the toggle button to activate data collection on the sensor for that data type, and manipulate the sampling (how many times per interval the app grabs data). In this example, we’ll collect a couple of different streams, including accelerometer, battery, texts, communication contexts, location, and screen time!
+<img src="../../assets/images/toggle_sensors.png" alt="Toggle sensors" /></p>
+
+<p>For a look at all of the available data streams and descriptions of what they are/do, see <a href="https://awareframework.com/sensors/"> AWARE’s sensor documentation</a>.</p>
+
+<h2 id="adding-participant-devices">Adding Participant Devices</h2>
+<p>Now you have a study, and you know what data you want to collect in it. To add participants to the study, have them download the AWARE_V2 application first. In iOS, it comes up first in the App Store as AWARE_V2:</p>
+
+<p><img src="../../assets/images/user1.png" class="centerImage" alt="User Image 1" width="193" height="130" /></p>
+
+<p>Now, simply share the URL available under <code class="language-plaintext highlighter-rouge">Join study</code>, or allow users to scan the QR code. Users can find the QR code scanner under <code class="language-plaintext highlighter-rouge">Settings</code> in the top right hand corner:</p>
+
+<p><img src="../../assets/images/user2.png" class="centerImage" alt="User Image 2" width="193" height="130" /></p>
+
+<p>Whenever a user has a problem on their device, they may just need to re-sync with the server. To do this, they can click the sync arrows in the top right.</p>
+
+<h2 id="collecting-active-data">Collecting Active Data</h2>
+<p>Once a user has gone through the above, the mobile device will begin collecting passive data at whatever sampling rate you configured. But if you wanted to collect <em>active</em> data (e.g., have users answer a question or respond to a survey), you’ll need to configure an <a href="https://dl.acm.org/doi/10.1145/3123988"> ESM</a>.</p>
+
+<p>Once any number of devices are connected, you’ll notice a change to the bottom of the screen of the AWARE Dashboard. From here, you can configure an ESM to go out to users:</p>
+
+:ET

@@ -1,0 +1,52 @@
+I"	<h1 id="study-measures">Study Measures</h1>
+
+<h2 id="daily-activity-tracking-and-monitoring">Daily Activity Tracking and Monitoring</h2>
+<ul>
+  <li>Questionnaires similar to those approved in IRB protocol #813943</li>
+  <li>GPS Data</li>
+  <li>Accelerometer/activity data</li>
+  <li>Sociability metadata and phone keystroke data</li>
+  <li>Overall phone/screen usage</li>
+</ul>
+
+<h2 id="cognitive-assessment">Cognitive Assessment</h2>
+<ul>
+  <li>WebCNP Cognitive Battery approved in IRB protocol #813943</li>
+</ul>
+
+<h2 id="self-report-questionnaires">Self Report Questionnaires</h2>
+<p>Measures approved in lab-wide protocols, including but not limited to:</p>
+<ul>
+  <li>Affective Reactivity Index (ARI)</li>
+  <li>Beck Depression Index II (BDI)</li>
+  <li>Adverse Childhood Experiences scale (ACES)</li>
+  <li>Behavioral Inhibition/Activation Scales (BIS/BAS)</li>
+  <li>Brief Sensation Seeking Scale (BSS)</li>
+  <li>The Chapman Trait Anhedonia Scales for physical (RPAS) and social (RSAS) anhedonia</li>
+  <li>Positive and Negative Affect Schedule (PANAS)</li>
+  <li>Other standard psychological scales may be administered as well</li>
+</ul>
+
+<h2 id="imaging-procedures">Imaging Procedures</h2>
+<p>All imaging procedures will be approved by CAMRIS. The imaging measures collected in this study will not make use of IV contrast agents.</p>
+
+<p>3T Imaging Procedures similar to those approved in IRB protocols #828424, #822831:</p>
+<ul>
+  <li>High-resolution Anatomical Images</li>
+  <li>Resting Perfusion Images</li>
+  <li>Functional Images</li>
+  <li>Diffusion Images</li>
+  <li>Other experimental imaging sequences that may not be FDA-approved but are considered non-significant risks</li>
+</ul>
+
+<p>7T Imaging Procedures similar to those approved in IRB protocol #825834:</p>
+<ul>
+  <li>Magnetization prepared rapid gradient echo (MPRAGE) resulting in a T1-weighted contrast image</li>
+  <li>Spoiled gradient echo (GRE) resulting in a T2*-weighted contrast images</li>
+  <li>Turbo spin echo (TSE) sequence resulting in T2-weighted contrast</li>
+  <li>fMRI BOLD activation to a white cross-hair</li>
+  <li>Single-shot echo planar imaging (EPI)</li>
+  <li>GluCEST imaging parameters</li>
+  <li>Other experimental imaging sequences that may not be FDA-approved but are considered non-significant risks</li>
+</ul>
+:ET

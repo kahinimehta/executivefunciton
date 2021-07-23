@@ -1,0 +1,56 @@
+I"…<h1 id="data---location">Data  &amp; Location</h1>
+
+<h2 id="intake-day">Intake Day</h2>
+<ul>
+  <li>CAPA: Banshee</li>
+  <li>BPD SCID:	Banshee</li>
+  <li>CNB:	WebCNPServer</li>
+  <li>Self-Report: Banshee</li>
+</ul>
+
+<h2 id="imaging-day">Imaging Day</h2>
+<ul>
+  <li>Imaging Data: Flywheel 
+  Scanner Task
+    <ul>
+      <li>.log:	porsche hard drive</li>
+      <li>.session:	porsche hard drive
+  Neuroec Data</li>
+      <li>q-task: porsche hard drive</li>
+      <li>Risk Aversion: porsche hard drive</li>
+      <li>Loss Aversion: porsche hard drive</li>
+      <li>ITC: porsche hard drive
+  Variability Data</li>
+      <li>Dominant: scanner task usb</li>
+      <li>Reaction: scanner task usb</li>
+      <li>CPT scanner: task usb</li>
+      <li>CPT_Gordon: scanner task usb</li>
+      <li>simple_processing: scanner task usb</li>
+      <li>complex_processing: scanner task usb</li>
+      <li>complex_reasoning: scanner task usb
+  PMU Data</li>
+      <li>ASL PMU: porsche hard drive</li>
+      <li>BOLD PMU: porsche hard drive
+  Other</li>
+      <li>Raw ASL: passport</li>
+      <li>Actigraphy: Saturn and Diegoâ€™s Pennbox (CSV only in PennBox, CSV and Binary in Saturn)</li>
+      <li>Beiwe: Saturn</li>
+      <li>BISS/MADRS: Banshee</li>
+      <li>Self Report Battery: Banshee</li>
+      <li>Pre/Post Self Reports: Banshee</li>
+      <li>EF CNB: WebCNP Server</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Medications	Oracle
+Diagnosis	Oracle?
+Demographics	Psycha1 (DataDump) 
+GOASSESS Summary Scores Proband	Banshee (Unscored/RAW)
+GOASSESS Summary Scores Collateral	Banshee (Unscored/RAW)
+Tanner/Substance/SPQ	Banshee (Unscored/RAW)
+Microbiome??	UNK
+Tracker	Banshee 
+DMDD	Banshee</p>
+
+:ET
