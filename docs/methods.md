@@ -27,6 +27,6 @@ nav_order: 2
 - Self Report ([Axis](https://axis.med.upenn.edu/))
 - PMU Data (stored as DICOM at session level on [Flywheel](https://upenn.flywheel.io/#/projects))
 
-[Additional information] (https://docs.google.com/spreadsheets/d/1DYNd1Qj7Q0s9rEqe1_ezLQwNYcPN44cORnge3UAhqF0/edit#gid=0)
+[Additional information](https://docs.google.com/spreadsheets/d/1DYNd1Qj7Q0s9rEqe1_ezLQwNYcPN44cORnge3UAhqF0/edit#gid=0)
 
 
