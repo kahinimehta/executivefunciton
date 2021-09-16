@@ -2,7 +2,7 @@
 layout: default
 title: Flywheel-SDK Upload Documentation
 has_children: false
-parent: documentation
+parent: Documentation
 has_toc: false
 nav_order: 1
 ---
