@@ -10,14 +10,14 @@ nav_order: 1
 
 This upload requires:
 
-  * A local installation or [Python](/docs/Basics/basics/#installing-python)
-  * [Logging in](/docs/flywheel/#connecting-with-the-sdk) to Flywheel using the CLI
+  * A local installation of [Python](https://pennlinc.github.io/docs/Basics/python/)
+  * [Logging in](https://pennlinc.github.io/docs/flywheel) to Flywheel using the CLI
   * A directory of files to upload to Flywheel
   * A .tsv of SCANID's and BBLID's (optional)
 
 ## Getting started
 
-We will be uploading files using the [flywheel-SDK](https://pennlinc.github.io/docs/flywheel/sdk_getting/). To get started, import necessary packages and log in using the CLI.
+We will be uploading files using the [flywheel-SDK](https://flywheel-io.gitlab.io/product/backend/sdk/branches/master/python/getting_started.html). To get started, import necessary packages and log in using the CLI.
 
 ```Python
 import glob
