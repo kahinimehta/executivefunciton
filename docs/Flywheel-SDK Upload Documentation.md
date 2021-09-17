@@ -46,19 +46,19 @@ To upload to the session or scan level (ie: BIDS files, .zip file of Variability
 In this example, we use the BIDS file name in a task file to match each .tsv with the appropriate session on flywheel.
 
 ```python
-subjects=EFProj.subjects()
+subjects=EFProj.subjects() #access all subjects in given project 
 sessions=[]
-for s in subjects :
+for s in subjects : #loop through subs and access all sessions in a given project 
     tempsessions=s.sessions()
     sessions.extend(tempsessions)
 
-for ses in sessions:
+for ses in sessions: #loop through sessions and save scan id
     scanid=ses.label
     for file in all_files:
         f=file.split('/')
             g=(f[len(f)-1]).split('_')
             h=(g[1].split('-'))[1]
-            if scanid == h:
+            if scanid == h: #match session id to scan id in the file to be uploaded:
                 print("uploading {0} to {1}".format(file, scanid))
                 ses.upload_file(file)
 ```
@@ -73,17 +73,17 @@ For this example, we use scanner task .log files that are uploaded directly to t
 ids=pd.read_csv('EFR01DataEntryTracke-Eft1scanID_DATA_2021-09-15_1520.csv')
 id_dict=dict(zip(ids.bblid, ids.scan_id_timepoint_1))
 
-for ses in sessions:
+for ses in sessions: #loop through sessions and save scan id
         sesid=ses.label
-        #print(sesid)
         acq=ses.acquisitions()
-        for a in acq:
-            EFFiles=a.files
-            EFTypes=[x.type for x in EFFiles]
-            for file in to_upload1:
+        for a in acq: #loop through acquisitions for each session
+            EFFiles=a.files #access all files attatched to a session (ie: nifti, dicom)
+            EFTypes=[x.type for x in EFFiles] #identify type of file
+            for file in to_upload1: 
                 f=(file.split('/'))
                 bblid=f[len(f)-2]
                 scanid = id_dict[int(bblid)]
+                #search for correct label and file type in acquisition, and match session id to scan id in the file to be uploaded:
                 if 'ABCD_fMRI_frac-no-back-run1' in a.label or 'func_task-fracnoback_run-02' in a.label and 'nifti' in EFTypes and int(sesid) == scanid:
                     print('uploading {0} to {1}'.format(file, scanid))
                     a.upload_file(file)
