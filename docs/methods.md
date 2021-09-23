@@ -67,8 +67,8 @@ nav_order: 2
     - complex_processing
     - complex_reasoning
 - Self Report ([Axis](https://axis.med.upenn.edu/))
-    - ALES: Adverse Life Experiences Scale 
-    - ALS-18 (only T1): Affective Lability Scale
+    - ALES: Adverse Life Experiences Scale; [Authors](https://www.researchgate.net/publication/229728584_The_Appraisal_of_Life_Events_ALE_Scale_Reliability_and_validity): Ferguson, Matthews & Cox, 2010;  [PDF](/executivefunction/assets/selfReports/ALES2_CommonSelfReportScalesCo.pdf)
+    - [ALS-18] () (only T1): Affective Lability Scale
     - ARI (collateral and proband): Affective Reactivity Index
     - ASRM (only T1): Altman Selfrating Mania Scale 
     - BDI-1A (age 13 and older): Beck Depression Inventory
