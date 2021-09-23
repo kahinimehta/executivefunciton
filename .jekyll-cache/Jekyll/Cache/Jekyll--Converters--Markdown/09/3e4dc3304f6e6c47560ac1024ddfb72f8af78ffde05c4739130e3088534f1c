@@ -1,0 +1,100 @@
+I"O<h1 id="study-measures">Study Measures</h1>
+<h2 id="intake-day">Intake Day</h2>
+<ul>
+  <li>CAPA (Interview  stored on <a href="https://axis.med.upenn.edu/">Axis</a>, diagnosis stored on <a href="https://bbldm.pmacs.upenn.edu/">Oracle</a>)
+    <ul>
+      <li>Timeline</li>
+      <li>Demos</li>
+      <li>SES (Collateral only)</li>
+      <li>Medical History (Collateral only)</li>
+      <li>ADHD (long)</li>
+      <li>Depression (long)</li>
+      <li>Mania (long)</li>
+      <li>SIPS</li>
+      <li>Suicide (long)</li>
+      <li>PTSD (long)</li>
+      <li>Other disorders</li>
+      <li>Cornblatt Social</li>
+      <li>Cornblatt Role</li>
+      <li>FIGS (Collateral only)</li>
+      <li>FIGS Checklists: Psychosis</li>
+      <li>SIPS GAF</li>
+      <li>Schizotypal Checklist</li>
+      <li>Additional Case Documents</li>
+    </ul>
+  </li>
+  <li>LiBI CNB (<a href="https://webcnp.med.upenn.edu/">WebCNP database</a>)
+    <ul>
+      <li>WRAT4: Wide Range Reading Assessment</li>
+      <li>MPRACT: Motor Praxis Test</li>
+      <li>MEDF36: Measured Emotion Differentiation Test</li>
+      <li>KSPVRT: Penn Verbal Reasoning Test</li>
+      <li>CPF_A: Penn Face Memory Test</li>
+      <li>ER40_D: Penn Emotion Recognition Test for Children</li>
+      <li>SLNB2: Short Letter N Back Test</li>
+      <li>k-CPW: Penn Word Memory Test</li>
+      <li>ADT36: Age Differentiation Test</li>
+      <li>VSPLOT15: Penn Line Orientation Test</li>
+      <li>SVOLT_A: Visual Object Learning Test</li>
+      <li>PMAT24_A: Penn Matrix Analysis Test</li>
+      <li>SPCPTNL: Short Penn Continuous Performance Task</li>
+      <li>k-PCET_A: Penn Conditional Exclusion Test for Children</li>
+      <li>sCTAP: Short Computerized Finger-Tapping Test</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="imaging-day">Imaging Day</h2>
+<ul>
+  <li>Imaging Data (<a href="https://upenn.flywheel.io/#/projects">Flywheel</a>)</li>
+  <li>frackback Scanner Task (.log stored at acquisition level on <a href="https://upenn.flywheel.io/#/projects">Flywheel</a>)</li>
+  <li>EF CNB (<a href="https://webcnp.med.upenn.edu/">WebCNP database</a>)
+    <ul>
+      <li>AIM: Abstraction Inhibition and Working Memory Test</li>
+      <li>DIGSYM: Digit Symbol Test</li>
+      <li>Trails A: Trails Task - Part A</li>
+      <li>Trails B: Trails Task - Part B</li>
+      <li>KDDISC: Penn Delay Discounting Task</li>
+      <li>KRIDISC: Penn Risc Discounting Task</li>
+      <li>EDT: Penn Effort Discounting Task</li>
+    </ul>
+  </li>
+  <li>Variability Battery (.zip stored at session level on <a href="https://upenn.flywheel.io/#/projects">Flywheel</a>)
+    <ul>
+      <li>Dominant</li>
+      <li>Reaction</li>
+      <li>CPT</li>
+      <li>CPT_Gordon</li>
+      <li>simple_processing</li>
+      <li>complex_processing</li>
+      <li>complex_reasoning</li>
+    </ul>
+  </li>
+  <li>Self Report (<a href="https://axis.med.upenn.edu/">Axis</a>)
+    <ul>
+      <li>ALES: Adverse Life Experiences Scale; Ferguson, Matthews, &amp; Cox, <a href="https://www.researchgate.net/publication/229728584_The_Appraisal_of_Life_Events_ALE_Scale_Reliability_and_validity">2010</a>;  <a href="/executivefunction/assets/selfReports/ALES_CommonSelfReportScalesCol.pdf">PDF</a></li>
+      <li>ALS-18 (only T1): Affective Lability Scale; Contardi et al., <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00427/full">2018</a>;  <a href="/executivefunction/assets/selfReports/ALS18_CommonSelfReportScalesCo.pdf">PDF</a></li>
+      <li>ARI (collateral and proband): Affective Reactivity Index; Stringaris et al., <a href="https://acamh.onlinelibrary.wiley.com/doi/full/10.1111/j.1469-7610.2012.02561.x">2012</a>; PDFs: <a href="/executivefunction/assets/selfReports/ARIP_CommonSelfReportScalesCol.pdf">Proband</a>, <a href="/executivefunction/assets/selfReports/ARIC_CommonSelfReportScalesCol.pdf">Collateral</a></li>
+      <li>ASRM (only T1): Altman Selfrating Mania Scale; Altman, Hedeker, Peterson, &amp; Davis, <a href="https://www.biologicalpsychiatryjournal.com/article/S0006-3223(96)00548-3/pdf">1997</a>; <a href="/executivefunction/assets/selfReports/ASRM_CommonSelfReportScalesCol.pdf">PDF</a></li>
+      <li>BDI-1A (age 13 and older): Beck Depression Inventory; Beck et al., <a href="https://jamanetwork.com/journals/jamapsychiatry/article-abstract/487993">1961</a>; <a href="/executivefunction/assets/selfReports/BDI1A_CommonSelfReportScalesCo.pdf">PDF</a></li>
+      <li>BDI-1A Child (up till age 13): Beck Depression Inventory; Beck et al., <a href="https://jamanetwork.com/journals/jamapsychiatry/article-abstract/487993">1961</a>; <a href="/executivefunction/assets/selfReports/BDI1AC_CommonSelfReportScalesC.pdf">PDF</a></li>
+      <li>BIS-BAS Child: Behavioral Inhibition/Activation System; Carver, &amp; White, <a href="https://psycnet.apa.org/fulltext/1995-00067-001.html">1994</a>; <a href="">PDF</a>)</li>
+      <li>E-SWAN ADHD (collateral and proband)</li>
+      <li>E-SWAN DMDD (collateral and proband, only T1)</li>
+      <li>MAPS-SR: The Motivation and Pleasure Scale - Self-Report</li>
+      <li>PANAS (child, only T1): Positive and Negative Affect Schedule</li>
+      <li>PPA: PROMIS Pediatric Anxiety</li>
+      <li>PRIME Screen (self-report)</li>
+      <li>RPAS (only T1): Revised Physical Anhedonia Scale</li>
+      <li>RSAS (only T1): Revised Social Anhedonia Scale</li>
+      <li>Substance Use Questionnaire</li>
+      <li>Tanner boy/girl</li>
+      <li>Wolf IM/EM Short</li>
+    </ul>
+  </li>
+  <li>PMU Data (stored as DICOM at session level on <a href="https://upenn.flywheel.io/#/projects">Flywheel</a>)</li>
+</ul>
+
+<p><a href="https://docs.google.com/spreadsheets/d/1DYNd1Qj7Q0s9rEqe1_ezLQwNYcPN44cORnge3UAhqF0/edit#gid=0">Additional information</a></p>
+
+:ET
