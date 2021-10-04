@@ -4,9 +4,8 @@ title: Study Measures
 has_children: false
 parent: Study
 has_toc: false
-nav_order: 2
+nav_order: 5
 ---
-
 # Study Measures
 ## Intake Day
 -  CAPA (Interview  stored on [Axis](https://axis.med.upenn.edu/), diagnosis stored on [Oracle](https://bbldm.pmacs.upenn.edu/))
@@ -48,7 +47,7 @@ nav_order: 2
 
 ## Imaging Day
 - Imaging Data ([Flywheel](https://upenn.flywheel.io/#/projects))
-- frackback Scanner Task (.log stored at acquisition level on [Flywheel](https://upenn.flywheel.io/#/projects))
+- [frackback Scanner Task](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4332798/) (.log stored at acquisition level on [Flywheel](https://upenn.flywheel.io/#/projects))
 - EF CNB ([WebCNP database](https://webcnp.med.upenn.edu/))
     - AIM: Abstraction Inhibition and Working Memory Test
     - DIGSYM: Digit Symbol Test
@@ -88,6 +87,6 @@ nav_order: 2
     
 - PMU Data (stored as DICOM at session level on [Flywheel](https://upenn.flywheel.io/#/projects))
 
-[Additional information](https://docs.google.com/spreadsheets/d/1DYNd1Qj7Q0s9rEqe1_ezLQwNYcPN44cORnge3UAhqF0/edit#gid=0)
+Additional information about data and where it's stored, as per [10/04/2021](/executivefunction/assets/misc/10:4:21_GRMPY-BPD-EF Data Storage.xlsx)
 
-
+[Link to spreadsheet](https://docs.google.com/spreadsheets/d/1DYNd1Qj7Q0s9rEqe1_ezLQwNYcPN44cORnge3UAhqF0/edit#gid=0)
