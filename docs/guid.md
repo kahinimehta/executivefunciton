@@ -16,7 +16,6 @@ First, you will need to request an NDA account. Once you have logged in to your 
 Select and download the appropriate tool for your operating system. Log in with your NDA credentials and select Create GUIDs in Batch. 
 <img src="/executivefunction/assets/images/guid2.png" alt="GUID 2"> 
 
-Download the template file and fill in as follows:  
 <img src="/executivefunction/assets/images/guid3.png" alt="GUID 3"> 
 If a subject has no middle name, leave the column blank and fill in NO for the column SUBJECTHASMIDDLENAME. 
 
