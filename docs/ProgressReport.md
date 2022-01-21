@@ -6,7 +6,7 @@ parent: Documentation
 has_toc: false
 nav_order: 4
 ---
-Progress Reports: 
+# Progress Reports
 
 Once a year, Principle Investigators are required to send updates to the NIMH on the progress of their studies. Coordinators are responsible for filling out recruitment updates and demographics tables. 
 
