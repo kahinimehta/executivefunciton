@@ -231,6 +231,7 @@ image03$visnum<-data$timepoints
 # there are more fields that need to be calculated, but they are empty (conditional on other modalities)
 ​
 write.csv(image03, file='image03_NDA.csv')
+
 ```
 
 Once you write out the .csv, copy/paste the data into the original template from NIH, and the rest of the fields will generate blank. It is recommended to copy this data into the template downloaded directly from NDA, as the validator is extremely particular, and the headings need to match identically.
