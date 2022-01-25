@@ -16,7 +16,7 @@ If using data hosted on Flywheel, start by exporting to a cluster or external ha
 ​
 Next, using PyBIDS/NiBABLE parse to parse file names into a CSV file of relevant information (ie: subject and session labels, data type, file name, and other imaging parameters) as follows:
 ​
-``` Python
+``` R
 pip install bids
 from bids import BIDSLayout
 from bids.layout import parse_file_entities
@@ -65,7 +65,7 @@ df.to_csv('nda_scans.csv', sep=',')
 ```
 You will also need to get information on the version of dcm2nii used to convert each scan. To do this, we can use an SDK script.
 ​
-```Python
+```R
 import pandas as pd
 import flywheel
 fw = flywheel.Client()
