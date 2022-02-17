@@ -21,21 +21,21 @@ This upload requires:
 
 We will be uploading files using the [flywheel-SDK](https://flywheel-io.gitlab.io/product/backend/sdk/branches/master/python/getting_started.html). To get started, import necessary packages and log in using the CLI.
 
-```Python
+```python
 import glob
 import flywheel
 fw = flywheel.Client()
 ```
 Set project using its name on flywheel
 
-```Python
+```python
 EFProj=fw.projects.find_first('label=EFR01')
 print(EFProj)
 ```
 
 Set your directory to location of files for upload and list out files.
 
-```Python
+```python
 root_dir = '/Users/krmurtha/Box Sync/EXECUTIVE_FUNCTION/SCANNER_TASK/'
 bids_dir = 'BIDS/test'
 all_files=glob.glob(root_dir + bids_dir + '*/*')
