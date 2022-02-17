@@ -248,6 +248,8 @@ Note: for timepoint 1 you will be completing LiBI CNB on CAPA-day and only EXECT
 *Instructions: The first survey is about how you feel right now, in this moment, about to get in the scanner. Fill in the bubbles and press submit when you are finished. This will take you to a second survey. When finished, hit submit and tell me you’re done.*
 
 ### SCAN
+**Prescan setup ~10 minutes**
+
 - PROTOCOL NAME: SATTERTHWAITE→ “ABCD_32Channel”
 - FLYWHEEL: BBLID_SCANID@BBL:EFR01
 - In case of glasses: use the tool-kit to fix participant with MRI safe glasses
@@ -266,4 +268,126 @@ Account: Presentation Password: WPboitC?
 
 - Open notepad on BBL computer to test response device
 - Plug in 2-button response device to scanner and press the blue button a few times to test, should see “bybbb” (or some combination) come up on notepad, that means it’s working
+
+*Set up frac bac task* 
+- Select “EFR01” folder on desktop → select “Subject Files” →  select either TIMEPOINT 1 or 2 and create a new folder 
+    - File naming: for T1 folder name = BBLID, for T2/T3 folder name = BBLID_SCANID
+- Go back to EFR01 folder → select “EFR01_Task” → enter BBL ID for T1 and BBLID_SCANID for T2/T3 then select “run”
+- Click “EFR01 Task”, select “Scenarios” → on right side, scroll down and select the logfile you just created and hit the “→ ” arrow so that the name of the folder populates at the end of the file path 
+- Go back to the administration, deselect the first (crosshair) and enter either BBLID or BBLID_SCANID (for T2/T3) when it asks you the name of the experiment– this is now set up and ready to be run during the frac_back sequence
+
+2. Log into **Shared Computer**
+Account: meduser Password: meduser1
+
+_Set up Movie_ 
+- Select “EFR01_SubjectFilms” from desktop on shared computer, select movie - or DisneyPlus for Ratatouille
+- Make sure the long AUX chord is plugged into the shared computer
+- Power on white connector, (volume=50) and select “reverse L/R” 
+- Set up Crosshair Powerpoint
+- Select “Crosshairs” from desktop of shared computer, minimize until needed
+- Make sure the long AUX chord is plugged into the shared computer
+
+_Ensure participant is set up comfortably_
+- Make sure to remind them to stay very still and keep the 2-button remote in their dominant hand the entire time. Make sure they feel the left blue button which they will be using.
+- Tell them you will be right outside and will talk to them every few minutes (gage nervousness)
+
+**Scan administration ~57 minutes**
+- Reminder: Sign in to MRI apt on CAMRIS calendar[https://pathbio.med.upenn.edu/camris/dogfish/](https://pathbio.med.upenn.edu/camris/dogfish/)
+<img src="/executivefunction/assets/images/EF40.png" alt="MRI Schematic">
+
+1. Before T1 navsetter (Series #2 - anat_acq-vnavsetter_T1w) check-in with participant to make sure they are ready and the movie is playing okay – remind them to stay super still – play movie
+2. Immediately following the end of T1 (Series #3 - anat_T1) RUN IMSCRIBE (must be completed before Series #6 - DWI) and give IMSCRIBE results to the technologist (see notes on how-to complete IMSCRIBE below): 
+    - You can then run the next IMSCRIBE immediately changing the template – needed before first functional task (series #9)
+3. Before T2 navsetter (Series #4 - anat_acq-vnavsetter_T2w) pause the movie and check in with participant again, also ask the technologist if there is motion on T1, if yes, repeat T1 and re-run inscribe
+    - Following T2 ask Tech to make sure there is not too much motion - if there is, repeat it.
+4. Before DWI (Series #6 - dwi_acq-multishell_dir-AP_dwi) pause the movie and check in with participant. Remind them this is the part where the bed will shake/vibrate but to remain as still as possible and continue to watch the movie   
+    - Following DWI confirm that there wasn’t too much motion on DWI, if yes, repeat
+5. Before the first functional task (Series #9 - func_task-rest_run-01) pull up the white cross on the far left computer and confirm with participant that they see the cross, tell them to focus on the cross and stay super still
+6. Before the frac-back task (Series #10 - func_task_fracnoback_run-02) Switch to the BBL Computer and press “run task.” Click through the instructions using the space bar and confirming participant remembers/understands the instructions. Next, press esc - continue - then “run non-stop” to begin
+    - You will see a black screen - tell the technologist they can begin, and a fractal will appear
+    - You can track to make sure participant is responding looking at the FORP dashboard - when they select a button a light will appear there
+    - Click continue - exit task - save to save the logfiles from the task
+7. Before the 3rd functional task (Series #13 - func_task-rest_run-03) switch back to the Shared Computer and pull up the cross - ensure that the participant can see the cross and begin
+8. You may check in between ASL and QSM (series 14/15) as needed - cross remains on the scree
+_Notes on Scanner Motion: Scans are in the order or importance, prioritize repeating T1 and T2 scans if there is motion - even if this means having to cut ASL/QSM at the end_
+
+**IMSCRIBE**
+- Complete at the end of T1)
+    1. Right click on desktop and open terminal, type “matlab” in terminal
+    2. In matlab, type “imscribe” to launch
+    3. First Imscribe: apply to DTI  
+        - Template localizer →T1 (make sure to click “show all files”)
+        - Template FOV → DTI
+        - Target localizer→ latest RT export (if right after T1) OR: mnt →  →  RTExport_Current → click “name” once to make it sort by the most recent (?) →  click the particpants name →  select 176 images from “series 4”
+        - Note: if sequences run in different order or sequence repeated, the series number will no longer be 4 and will be different. Key is to look for the 176 images
+    4. Second Imscribe after T1: apply to Rest_Bold, FracBack, other Rest_Bold
+        - Template localizer→  stays the same as above
+        - Template FOV→  BOLD
+        - Select “reuse xForm” on the top right to re-use the T1 scans from above
+
+### MRI CLEANUP
+1. Sign out of CAMRIS calendar
+2. Collect frac_back logfiles (2 files) from BBL_computer by uploading to Pennbox
+3. Ensure data has appeared on Flywheel
+4. Sign out/close all windows used on computer
+5. Remind Technologist about CD/neuroradiology read
+**GRAB CD from previous visit if you have not already**
+
+
+### FINAL VISIT PROCEDURES
+1. Post-Scan Self Reports: Completed post-scan self reports on Axis (one survey about how they feel right then in that moment) immediately following the scan
+2. W9/C2: Make sure participant signs W9 and C2, and participant rather than parent writes the name
+Payments: Give participant the Clincard [https://clincard.com/](https://clincard.com/) and load payment ($100 for EFT1, $150 for T2, $150 + $150 BONUS at T3)
+*Escort the participant back to the main lobby, thank them!! and remind them to send you pictures of receipts for travel (must have total amount and the date)*
+
+### POST VISIT ADMIN
+
+
+###### **Data Storage**
+1. [Flywheel](https://upenn.flywheel.io/): 
+- Navigate to Flywheel and sign in with your UPenn credentials. 
+- Select the EFR01 Project→ then select “Sessions”. 
+- All MRI series should appear on Flywheel because you added the Flywheel Study Comment prior to scan administration. When the data first appears on flywheel it will look like the picture below:
+<img src="/executivefunction/assets/images/EF41.png" alt="Flywheel1">
+
+- **Timepoint 1**: 
+1. Select the scan that you just completed, click “Subject” → Copy the ScanID portion of the Label, then delete from the label to leave only the BBLID → select “Human” → Click “Save”
+2. Next, select “Session” → Delete “BRAIN Research ^Satterthwait” Label, and paste the ScanID → Press Save
+ <img src="/executivefunction/assets/images/EF42.png" alt="Flywheel2">   
+
+- **Timepoint 2**: Linking to first timepoint
+1. Select the blue check mark under “Action” to select the scan → select Action drop down → Select “Move Scan to Existing Subject” → Fill in the information as seen below, select the participant’s BBL ID from the list → hit save – this will remove the ScanID from the Subject Label
+ <img src="/executivefunction/assets/images/EF43.png" alt="Flywheel3">  
+
+2. Next, Select Session → Delette the Brain research label and insert the Scan ID for the scan you just completed → hit save 
+3. Running Heudiconv - BIDS - Deleting Duplicates: 
+# update
+4. All Data (Task, Variability, Self Reports) final resting place is on Flywheel
+
+##### **Variability/Task File Back Up**: 
+Variability and the scanner task should be stored on both PennBox and the orange backup drive stored in the Purple room of Gates
+# update
+
+##### **AppointmentPlus**: 
+Update status to completed
+
+##### **AxisTracker**: 
+Navigate to [https://axis.med.upenn.edu/index.php](https://axis.med.upenn.edu/index.php) project titled: **EFR01 Data Entry #tracker** → Select “Add/Edit Record” on the left-side panel,  enter BBL in “Enter a new or Existing REDCap ID” → update admin and corresponding Scan Visit page
+
+##### **Procedure Update**: 
+Update scan notes on Oracle by selecting “Procedures” on the left hand side → “Procedure Update” search by BBL and fill out the information in accordance with the picture below
+<img src="/executivefunction/assets/images/EF44.png" alt="IMG Update">  
+
+_Note: include any scan notes in “Scan Notes” section in axis EF data tracker_ 
+
+##### **MISC.**: 
+1. Update google sheet EF Tracker
+# link to sheet?
+2. CNB Update: Update admin notes: update notes by going to [https://webcnp.med.upenn.edu/](https://webcnp.med.upenn.edu/) >> View results/scores >> searching by BBLID and then entering comments 
+3. Study Enroll Update: On oracle, select “Study_Enroll” on left-side panel🡪 select “StudyEnroll Update” and change study status to “in follow-up” and save
+4. Update recruitment spreadsheet: mark participant as “1” under completed and consented
+5. Consents: make sure to download consents from axis and save them here (afp://Coordinators/Protocols/TED_PROTOCOLS/EXECUTIVE_829744/VIRTUAL EF ASSESSMENTS/CONSENTS/)
+6. Payments: Update travel and print receipts for clincard report
+
+
 
