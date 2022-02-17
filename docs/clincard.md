@@ -6,6 +6,7 @@ parent: Documentation
 has_toc: false
 nav_order: 2
 ---
+# Clincard
 
 Once a month, coordinators are responsible for performing an audit of all payments and reimbursements made using the clincard system for a particular project. 
 

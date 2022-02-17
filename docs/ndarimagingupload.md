@@ -6,7 +6,7 @@ parent: Documentation
 has_toc: false
 nav_order: 5
 ---
-
+# NDAR
 
 Uploading images to NDA requires a formatted spreadsheet of including information from the JSON and the file-path to NIFTI images. Using an exported BIDS dataset and PyBIDS tools, you can download and format all images from a Flywheel project for NDA upload. For periodic uploads, only T1 data is required.
 ​
