@@ -228,22 +228,22 @@ Note: for timepoint 1 you will be completing LiBI CNB on CAPA-day and only EXECT
 - You should make a REDCap report so you can follow along when the forms are marked as complete (please reach out to the CRM so they can show you how to create this if one is not already created). This is to ensure 1) they are moving along and not stuck 2) that they are attentively answering questions and not distracted3) they’re not just clicking the same answer over and over just to get it done. 
 
 ### PRE-SCAN ITEMS
-1. Practice task: [duration = 3-5 min.]:
+1. **Practice task: [duration = 3-5 min.]:**
  - Using the EF small black HP laptop, go through the practice N-Back task that they will encounter during the scan
    Note: This must be completed prior to the scan
 - EF Black PC Laptop → enter common password → click on EFR01 (the presentation) on the desktop → Click run scenario or run non-stop
 - You will see a page that says “Ready” – Press enter to continue
 - The instructions for the 0-Back will appear → read the instructions below, press the Space Bar to continue to 2-back → After you have completed giving the instructions press “ESC” → “Continue” → “Run non-stop” to begin the task
+
 *Instructions: “This is the n-back fractal task that you will play during the scan. In the scanner, you will have a screen that shows the task and a remote that you will hold in your dominant hand throughout the scan. In the actual scan, you will press the left blue button to respond, for right now, we will practice with you pressing the ‘B’ button on the computer keyboard. The test has two parts, we’ll practice both parts. The first part is the 0-back. Press the “B” button as fast as you can whenever you see this purple picture (point to picture). Do you have any questions about the 0-back? Great! The second part is the 2-back, press the “B” button as fast as you can whenever the picture you see is the same as the one that came two before, or two-back. You can see in this example, there is the fire picture, stripped picture, then the fire picture again. You’d press the button when you see the last fire picture because it’s the same as the one that came two before or two back (pointing throughout). Any questions before we begin the practice? Great!”*
-**Observe practice to ensure they understand. Repeat if they do not seem to understand.** 
+*Observe practice to ensure they understand. Repeat if they do not seem to understand.* 
 
-2. Radiology Check-In: [duration = 10-20 min.] 
+2. **Radiology Check-In: [duration = 10-20 min.]**
 - 20-30 minutes before the scheduled scan time escort participant and collateral to radiology for them to be checked in (good time for participant to use the bathroom at radiology)
-**Note: Parent/legal guardian is needed to sign necessary consent information at Radiology**
+*Note: Parent/legal guardian is needed to sign necessary consent information at Radiology*
 
-3. Pre-Scan Self Reports: [duration = 5 min.] 
+3. **Pre-Scan Self Reports: [duration = 5 min.]**
 - On RedCAP, the second set of self-reports generated from oracle will have 2 short surveys to be completed either at HUP6 or right before you go down to radiology (see notes above on axis self-report generation and administration)
 *Instructions: The first survey is about how you feel right now, in this moment, about to get in the scanner. Fill in the bubbles and press submit when you are finished. This will take you to a second survey. When finished, hit submit and tell me you’re done.*
 
-
-
+### SCAN
