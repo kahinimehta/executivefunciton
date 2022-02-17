@@ -244,6 +244,7 @@ Note: for timepoint 1 you will be completing LiBI CNB on CAPA-day and only EXECT
 
 3. **Pre-Scan Self Reports: [duration = 5 min.]**
 - On RedCAP, the second set of self-reports generated from oracle will have 2 short surveys to be completed either at HUP6 or right before you go down to radiology (see notes above on axis self-report generation and administration)
+
 *Instructions: The first survey is about how you feel right now, in this moment, about to get in the scanner. Fill in the bubbles and press submit when you are finished. This will take you to a second survey. When finished, hit submit and tell me you’re done.*
 
 ### SCAN
