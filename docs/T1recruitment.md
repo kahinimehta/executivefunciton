@@ -1,6 +1,6 @@
 ---
 layout: default
-title: T1 recruitment
+title: T1 Recruitment
 has_children: false
 parent: Documentation
 has_toc: false
@@ -56,7 +56,7 @@ For each participant in the recruitment spreadsheet, you must first check their 
 
 
 
-#### Recruitment Call script:
+#### **Recruitment Call script**:
 
 Hi, am I speaking with XX’s parent? My name is XX,  calling from the Children’s Hospital of Philadelphia. We would like to invite your XX to participate in a paid research study with us.  If you’re interested, do you have some time right now to talk about it? 
 [No]
@@ -75,7 +75,7 @@ No worries. Would you mind explaining why this isn’t of interest to you? (Log 
 [Yes]
 Thank you … [continue into next steps, see “Recruitment Call” section below]
 
-#### Voicemail template: 
+#### **Voicemail template**: 
 
 Hi, my name is XX from the Children's Hospital of Philadelphia. Your child may be eligible to participate in a paid research study with us. Please give me a call or text back at +1 XX. Again, that’s +1 XX. Thank you. 
 
@@ -99,7 +99,7 @@ All the best,
 Xxx xxxx
  
 
-#### Scheduling Email Template (to parents)
+#### **Scheduling Email Template (to parents)**:
 
 Dear parent and participant,
  
@@ -124,7 +124,7 @@ If you have any questions, feel free to call or text me at xxx-xxx-xxxx. Thank y
 Best,
 Xxx xxxx
 
-#### Scheduling Email Template (to assessors)
+#### **Scheduling Email Template (to assessors)**:
 
 Hi assessors,
  
@@ -156,7 +156,7 @@ After explaining the study using the recruitment script above, if participant in
 Sign in to Appointments Plus (sometimes referred to as AP), at this weblink: [https://www.appointmentplus.com/](https://www.appointmentplus.com/)
 2. Schedule assessors for the date, with the generated Proband/Collateral ID
 
-#### Appointment-Plus Notes Template:
+#### **Appointment-Plus Notes Template**:
 - **For proband**: 
 BBLID
 Executive Function
@@ -190,7 +190,7 @@ When the visit is first scheduled, you will send a confirmation email to parents
 
 - 1-Week Reminder:  call ppt to confirm
 
-#### SCRIPT: Appointment Reminder (1 week before appointment)
+#### **SCRIPT: Appointment Reminder (1 week before appointment)**:
  
 [If speaking to someone:]
 Hi, this is [your name] from the University of Pennsylvania.  I’m just calling with a quick appointment reminder: we’re scheduled for [date of appointment] at [time of appointment] here at the hospital for [you/proband’s name and one of his/her parents]. 
@@ -212,7 +212,7 @@ If this appointment no longer works for you, please call me back as soon as poss
     4. Remind them only parent and child may come to the visit (no other siblings etc. because of current COVID guidelines)
     5. Remind them that if their child is taking any stimulant medication (vyvanse, adderall, ritalin etc.) ask if they can NOT give it to their child the morning of the visit
 
-#### SCRIPT: Confirmation Call (night before appointment)
+#### **SCRIPT: Confirmation Call (night before appointment)**
 
 **[Speaking to Someone]**:
 Hi, may I please speak with [proband/parent’s name]?  My name is [your name], I’m calling from the University of Pennsylvania to confirm our appointment with [proband (and his parents)] for tomorrow, [date], at [time] in [location].   
