@@ -248,3 +248,22 @@ Note: for timepoint 1 you will be completing LiBI CNB on CAPA-day and only EXECT
 *Instructions: The first survey is about how you feel right now, in this moment, about to get in the scanner. Fill in the bubbles and press submit when you are finished. This will take you to a second survey. When finished, hit submit and tell me you’re done.*
 
 ### SCAN
+- PROTOCOL NAME: SATTERTHWAITE→ “ABCD_32Channel”
+- FLYWHEEL: BBLID_SCANID@BBL:EFR01
+- In case of glasses: use the tool-kit to fix participant with MRI safe glasses
+- Information for MRI Tech: 
+<img src="/executivefunction/assets/images/EF38.png" alt="Info">
+
+1. Log into **BBL Computer** 
+Account: Presentation Password: WPboitC?
+
+*Set up 2-button response device* 
+- Plug in FORP into BBL_computer
+- Press button once to change mode
+- Turn dial to ‘yes’ and press down knob to select
+- Select “000” and press down knob to select as below: 
+<img src="/executivefunction/assets/images/EF39.png" alt="Mode select">
+
+- Open notepad on BBL computer to test response device
+- Plug in 2-button response device to scanner and press the blue button a few times to test, should see “bybbb” (or some combination) come up on notepad, that means it’s working
+
