@@ -225,7 +225,7 @@ Great.  Thanks again for your time, we’ll look forward to seeing you tomorrow!
 **[Leaving a Message]**:
 Hi, this is [your name] from the University of Pennsylvania.  I’m calling to confirm our appointment for tomorrow, [date/time] at [location].  Please give me a call back when you get this message so I can confirm that you’re still planning on coming in. My number is X and again, please call me back so we can confirm your appointment.  Thank you!
 
-TEMPLATE: Confirmation Email to Assessors
+#### **TEMPLATE: Confirmation Email to Assessors**: 
 
 Hi assessors,
 BBL confirmed their online appointment tomorrow, day, date, time. 
