@@ -38,10 +38,10 @@ nav_order: 3
 4. Within the **New Encounter** popup, enter the following information:
 - Type= research noncharable
 - Provider= your PI or relevant MD
-    - Ted Satterthwaite
-    - Dan Wolf
-    - Christian Kohler
-    - Raquel Gur 
+        1. Ted Satterthwaite
+        2. Dan Wolf
+        3. Christian Kohler
+        4. Raquel Gur 
 - Department= 423 (PBH HUP Gates) 
 <img src="/executivefunction/assets/images/EF16.png" alt="Encounter"> 
 
@@ -264,6 +264,7 @@ Account: Presentation Password: WPboitC?
 - Press button once to change mode
 - Turn dial to ‘yes’ and press down knob to select
 - Select “000” and press down knob to select as below: 
+
 <img src="/executivefunction/assets/images/EF39.png" alt="Mode select">
 
 - Open notepad on BBL computer to test response device
@@ -311,7 +312,7 @@ _Ensure participant is set up comfortably_
 8. You may check in between ASL and QSM (series 14/15) as needed - cross remains on the scree
 _Notes on Scanner Motion: Scans are in the order or importance, prioritize repeating T1 and T2 scans if there is motion - even if this means having to cut ASL/QSM at the end_
 
-**IMSCRIBE**
+**Imscribe**
 - Complete at the end of T1)
     1. Right click on desktop and open terminal, type “matlab” in terminal
     2. In matlab, type “imscribe” to launch
@@ -361,12 +362,12 @@ Payments: Give participant the Clincard [https://clincard.com/](https://clincard
 
 2. Next, Select Session → Delette the Brain research label and insert the Scan ID for the scan you just completed → hit save 
 3. Running Heudiconv - BIDS - Deleting Duplicates: 
-# update
+##### update
 4. All Data (Task, Variability, Self Reports) final resting place is on Flywheel
 
 ##### **Variability/Task File Back Up**: 
 Variability and the scanner task should be stored on both PennBox and the orange backup drive stored in the Purple room of Gates
-# update
+##### update
 
 ##### **AppointmentPlus**: 
 Update status to completed
@@ -382,9 +383,9 @@ _Note: include any scan notes in “Scan Notes” section in axis EF data tracke
 
 ##### **MISC.**: 
 1. Update google sheet EF Tracker
-# link to sheet?
+##### link to sheet?
 2. CNB Update: Update admin notes: update notes by going to [https://webcnp.med.upenn.edu/](https://webcnp.med.upenn.edu/) >> View results/scores >> searching by BBLID and then entering comments 
-3. Study Enroll Update: On oracle, select “Study_Enroll” on left-side panel🡪 select “StudyEnroll Update” and change study status to “in follow-up” and save
+3. Study Enroll Update: On oracle, select “Study_Enroll” on left-side panel, select “StudyEnroll Update” and change study status to “in follow-up” and save
 4. Update recruitment spreadsheet: mark participant as “1” under completed and consented
 5. Consents: make sure to download consents from axis and save them here (afp://Coordinators/Protocols/TED_PROTOCOLS/EXECUTIVE_829744/VIRTUAL EF ASSESSMENTS/CONSENTS/)
 6. Payments: Update travel and print receipts for clincard report

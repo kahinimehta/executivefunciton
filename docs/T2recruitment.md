@@ -32,7 +32,7 @@ If they are interested, parents must complete the Fullscreen (on Oracle) and the
 
 
 ### Appointment Plus Scheduling
-- Sign-in to Appointments Plus at this website: [https://www.appointmentplus.com/](<img src="/executivefunction/assets/images/EF7.png" alt="Dogfish"> )
+- Sign-in to Appointments Plus at this website: [https://www.appointmentplus.com/](https://www.appointmentplus.com/)(<img src="/executivefunction/assets/images/EF7.png" alt="Dogfish"> 
 - Mark the correct time on the Assessor’s schedule by clicking the “+” button
 - A pop-up will appear with Appointment details – fill in BBLID, Location (HUP Main Lobby), EFR01 T2, Assessor that scheduled appointment – then click NEXT
 <img src="/executivefunction/assets/images/EF8.png" alt="AP1"> 
