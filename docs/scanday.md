@@ -4,7 +4,7 @@ title: Scan Day Protocol/ MRI Visits
 has_children: false
 parent: Documentation
 has_toc: false
-nav_order: 8
+nav_order: 3
 --- 
 
 # Scan Day Protocol/ MRI Visits (work in progress)

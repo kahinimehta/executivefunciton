@@ -4,7 +4,7 @@ title: T1 Recruitment
 has_children: false
 parent: Documentation
 has_toc: false
-nav_order: 5
+nav_order: 1
 ---
 
 # T1 Recruitment
