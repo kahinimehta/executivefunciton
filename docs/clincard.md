@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Clincard Payment
+title: Clincard Monthly Report
 has_children: false
 parent: Documentation
 has_toc: false
