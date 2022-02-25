@@ -6,11 +6,11 @@ parent: Documentation
 has_toc: true
 nav_order: 1
 ---
-* TOC
-{:toc}
+
 
 # T1 Recruitment <!-- omit in toc -->
-
+* TOC
+{:toc}
 ### Navigating to Recruitment Sheet on LiBI Drive
 *Note: Nina Laney is the point person for access to the LiBI drive* 
 
