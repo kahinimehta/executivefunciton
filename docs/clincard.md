@@ -4,7 +4,7 @@ title: Clincard Payment
 has_children: false
 parent: Documentation
 has_toc: false
-nav_order: 6
+nav_order: 7
 ---
 # Clincard
 

@@ -28,10 +28,11 @@ nav_order: 4
 **REMINDER: THIS IS PHI SO REMEMBER TO DELETE THE PDF FROM YOUR DOWNLOADS FOLDER**
 
 ### PRELIMINARY SCAN-DAY PROCEDURES (to be completed right after consents)
-**Demographics**: 
+**Demographics**:  
 1. On oracle, select “Study Enroll” on the left-side panel → select “Demos Store” and enter the BBL
 2. Note: If they were not already enrolled during CAPA, then select “Study Enroll” and enroll them using the date they signed the consent form, when completed you will be automatically sent to the demographics page
 3. Note: There should be a demographics update at each interaction with participant (both CAPA and scan day)
+# TO BE UPDATED 
 
 **Medications**: 
 1. On Oracle, select “Medication” on the left-side panel →  select “NewCollect MedStore” and enter the BBL → select “Do medication entry”. – enter the corresponding information, visit #= the timepoint you are collecting for
@@ -226,12 +227,12 @@ Payments: Give participant the Clincard [https://clincard.com/](https://clincard
 
 2. Next, Select Session → Delette the Brain research label and insert the Scan ID for the scan you just completed → hit save 
 3. Running Heudiconv - BIDS - Deleting Duplicates: 
-##### update
+# update - link to Tinashe's doc
 4. All Data (Task, Variability, Self Reports) final resting place is on Flywheel
 
 ##### **Variability/Task File Back Up**: 
 Variability and the scanner task should be stored on both PennBox and the orange backup drive stored in the Purple room of Gates
-##### update
+# update
 
 ##### **AppointmentPlus**: 
 Update status to completed
