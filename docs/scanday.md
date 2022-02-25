@@ -201,6 +201,7 @@ _Notes on Scanner Motion: Scans are in the order or importance, prioritize repea
 3. Ensure data has appeared on Flywheel
 4. Sign out/close all windows used on computer
 5. Remind Technologist about CD/neuroradiology read
+
 **GRAB CD from previous visit if you have not already**
 
 
