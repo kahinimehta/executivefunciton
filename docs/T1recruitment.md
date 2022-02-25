@@ -8,7 +8,7 @@ nav_order: 1
 ---
 
 
-# T1 Recruitment
+# T1 Recruitment <!-- omit in toc -->
 * TOC
 {:toc}
 ### Navigating to Recruitment Sheet on LiBI Drive
