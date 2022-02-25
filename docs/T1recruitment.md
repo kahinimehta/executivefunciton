@@ -86,7 +86,7 @@ Hi, my name is XX from the Children's Hospital of Philadelphia. Your child may b
 
 Hello XX ! This is XX from the Children's Hospital of Philadelphia. Your child may be eligible to participate in a paid research study with us. If this is of interest to you, please let me know when you would have the availability for a call. 
 
-#### **4. Recruitment Email template (for potential parents)**: 
+#### **4. Recruitment Email Template (for potential parents)**: 
 
 The Lifespan Brain Institute (LiBI) of CHOP and UPenn would like to invite you and your child to participate in a paid research study. Our LiBI researchers hope to learn more about how the brain grows and develops over time, and how those changes relate to the way that children think and solve problems. 
  
@@ -194,7 +194,7 @@ When the visit is first scheduled, you will send a confirmation email to parents
 ---
 **1-Week Reminder** :  call ppt to confirm
 
-#### **SCRIPT: Appointment Reminder (1 week before appointment)**:
+#### **Appointment Reminder (1 week before appointment) Script **:
  
 [If speaking to someone:]
 Hi, this is [your name] from the University of Pennsylvania.  I’m just calling with a quick appointment reminder: we’re scheduled for [date of appointment] at [time of appointment] here at the hospital for [you/proband’s name and one of his/her parents]. 
@@ -217,9 +217,9 @@ If this appointment no longer works for you, please call me back as soon as poss
     5. Remind them that if their child is taking any stimulant medication (vyvanse, adderall, ritalin etc.) ask if they can NOT give it to their child the morning of the visit
 
 
-#### **SCRIPT: Confirmation Call (night before appointment)**
+#### **Confirmation Call (night before appointment) Script **
 
-**[Speaking to Someone]**:
+[Speaking to Someone]:
 Hi, may I please speak with [proband/parent’s name]?  My name is [your name], I’m calling from the University of Pennsylvania to confirm our appointment with [proband (and his parents)] for tomorrow, [date], at [time] in [location].   
 If you’re running late or having trouble finding us, please call me directly so I won’t be expecting you here at the hospital. 
  
