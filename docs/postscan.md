@@ -49,7 +49,6 @@ _Note: include any scan notes in “Scan Notes” section in axis EF data tracke
 
 ##### **MISC.**: 
 1. Update google sheet EF Tracker
-##### link to sheet?
 2. CNB Update: Update admin notes: update notes by going to [https://webcnp.med.upenn.edu/](https://webcnp.med.upenn.edu/) >> View results/scores >> searching by BBLID and then entering comments 
 3. Study Enroll Update: On oracle, select “Study_Enroll” on left-side panel, select “StudyEnroll Update” and change study status to “in follow-up” and save
 4. Update recruitment spreadsheet: mark participant as “1” under completed and consented
