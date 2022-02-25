@@ -7,10 +7,12 @@ has_toc: false
 nav_order: 5
 --- 
 
-# POST VISIT ADMIN
+# Post Visit Admin
+{: .no_toc }
+* TOC
+{:toc}
 
-
-###### **Data Storage**
+## Data Storage
 1. [Flywheel](https://upenn.flywheel.io/): 
 - Navigate to Flywheel and sign in with your UPenn credentials. 
 - Select the EFR01 Project→ then select “Sessions”. 
@@ -31,23 +33,23 @@ nav_order: 5
 # update - link to Tinashe's doc
 4. All Data (Task, Variability, Self Reports) final resting place is on Flywheel
 
-##### **Variability/Task File Back Up**: 
+## Variability/Task File Back Up: 
 Variability and the scanner task should be stored on both PennBox and the orange backup drive stored in the Purple room of Gates
 # update
 
-##### **AppointmentPlus**: 
+## AppointmentPlus: 
 Update status to completed
 
-##### **AxisTracker**: 
+## AxisTracker: 
 Navigate to [https://axis.med.upenn.edu/index.php](https://axis.med.upenn.edu/index.php) project titled: **EFR01 Data Entry #tracker** → Select “Add/Edit Record” on the left-side panel,  enter BBL in “Enter a new or Existing REDCap ID” → update admin and corresponding Scan Visit page
 
-##### **Procedure Update**: 
+## Procedure Update: 
 Update scan notes on Oracle by selecting “Procedures” on the left hand side → “Procedure Update” search by BBL and fill out the information in accordance with the picture below
 <img src="/executivefunction/assets/images/EF44.png" alt="IMG Update">  
 
 _Note: include any scan notes in “Scan Notes” section in axis EF data tracker_ 
 
-##### **MISC.**: 
+## Miscellaneous: 
 1. Update google sheet EF Tracker
 2. CNB Update: Update admin notes: update notes by going to [https://webcnp.med.upenn.edu/](https://webcnp.med.upenn.edu/) >> View results/scores >> searching by BBLID and then entering comments 
 3. Study Enroll Update: On oracle, select “Study_Enroll” on left-side panel, select “StudyEnroll Update” and change study status to “in follow-up” and save

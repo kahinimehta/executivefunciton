@@ -8,7 +8,8 @@ nav_order: 1
 ---
 
 
-# T1 Recruitment <!-- omit in toc -->
+# T1 Recruitment 
+{: .no_toc }
 * TOC
 {:toc}
 ### Navigating to Recruitment Sheet on LiBI Drive
@@ -56,7 +57,7 @@ For each participant in the recruitment spreadsheet, you must first check their 
 4. Recruitment Email Template (for potential parents)
 5. Scheduling Email Template (to parents)
 6. Scheduling Email Template (to assessors)
-
+{: .no_toc }
 
 
 #### **1. Recruitment Call script**:
@@ -138,7 +139,7 @@ Participant plans to complete appointment in room using personal laptop. Has acc
 Best,
 Xxxx
 
-### Recruitment Call
+### Recruitment Call Steps
 After explaining the study using the recruitment script above, if participant indicates they are interested, ask them if they have 15-20 minutes to go through some questions to make sure their child is eligible for the study, if yes, proceed: 
 
 - Change **Quick Exclude**: first, you must go to Oracle → Quickscreen → pull up the screen ID → remove “Quick Exclude” → Press save (then GetBBL)
@@ -199,11 +200,12 @@ When the visit is first scheduled, you will send a confirmation email to parents
 [If speaking to someone:]
 Hi, this is [your name] from the University of Pennsylvania.  I’m just calling with a quick appointment reminder: we’re scheduled for [date of appointment] at [time of appointment] here at the hospital for [you/proband’s name and one of his/her parents]. 
 This is for the research project we spoke about. I am calling to confirm that this appointment still works for you [and your child]. 
- 
+
 [If leaving a message:]
 Hi, this is [your name] from the University of Pennsylvania.  I’m calling for [proband’s name/parental name] to confirm our appointment for [date/time] at [location].  Please give me a call back when you get this message so I can confirm that you’re still planning on coming in.
  
 If this appointment no longer works for you, please call me back as soon as possible so that we can reschedule.  My number is X.  If this appointment still works for you, that’s great – I’ll give you another call the evening before your appointment and hope to speak with you then to confirm.  Again, my number is X. Thanks again for your interest in participating! 
+{: .no_toc }
 ---
 **2-Day Reminder**: text ppt to confirm date/time
 ---
@@ -230,7 +232,7 @@ Great.  Thanks again for your time, we’ll look forward to seeing you tomorrow!
 **[Leaving a Message]**:
 Hi, this is [your name] from the University of Pennsylvania.  I’m calling to confirm our appointment for tomorrow, [date/time] at [location].  Please give me a call back when you get this message so I can confirm that you’re still planning on coming in. My number is X and again, please call me back so we can confirm your appointment.  Thank you!
 
-#### **TEMPLATE: Confirmation Email to Assessors**: 
+#### **Confirmation Email to Assessors Template**: 
 
 Hi assessors,
 BBL confirmed their online appointment tomorrow, day, date, time. 
@@ -243,13 +245,13 @@ Best,
 XX
 
 
-### Logging the Calls
+## Logging the Calls
 Make sure to log all interactions with participants in Oracle (under contact entry) and on the recruitment spreadsheet
 
-### T1 Recruitment Tracking
+## T1 Recruitment Tracking
 The EF team uses a google spreadsheet, linked here, to track enrollment for T1 and T2 **however** no PHI can be listed on this sheet. Once a participant is enrolled during the CAPA visit, they are added to the spreadsheet and details on the participant enrollment status is tracked there
 # add in link
 
-###  Mailing out Clincard
+##  Mailing out Clincard
 Contact the Assessor responsible for mailing out clincard that XX BBL has been scheduled and needs a clincard mailed to them
 Assessor should mail out card as soon as possible and record card # in mailing log- : Saturn/Coordinators/Protocols/TED_PROTOCOLS/EXECUTIVE_829744/EF Virtual Assessments/ClincardMailinglog

@@ -8,9 +8,12 @@ nav_order: 4
 --- 
 
 # Scan Day Protocol/ MRI Visits (work in progress)
-
+{: .no_toc }
+* TOC
+{:toc}
 ## MRI Visit
-### EF CONSENTS
+{: .no_toc }
+### EF Consents
 1. As of Jan, 2021 all consents have been made virtual. Navigate to [https://axis.med.upenn.edu/](https://axis.med.upenn.edu/) and select “EF [829744] Consents #consents” Project (may be updated naming due to updates/modifications to consent form)
 2. Select “Add/Edit Records” from the left side and then select green “Add New Record”  
 <img src="/executivefunction/assets/images/EF29.png" alt="Redcap">
@@ -27,7 +30,7 @@ nav_order: 4
 
 **REMINDER: THIS IS PHI SO REMEMBER TO DELETE THE PDF FROM YOUR DOWNLOADS FOLDER**
 
-### PRELIMINARY SCAN-DAY PROCEDURES (to be completed right after consents)
+### Preliminary Scan Day Procedures (to be completed right after consents)
 **Demographics**:  
 1. On oracle, select “Study Enroll” on the left-side panel → select “Demos Store” and enter the BBL
 2. Note: If they were not already enrolled during CAPA, then select “Study Enroll” and enroll them using the date they signed the consent form, when completed you will be automatically sent to the demographics page
@@ -44,7 +47,7 @@ nav_order: 4
 **NOTE: when you get down to the scanner have MRI Technologist review the form and sign at the bottom**
 
 
-### COMPUTERIZED NEUROCOGNITIVE BATTERY (CNB)
+### Computerized Neurocognitive Battery (CNB)
 _Refer to Lisa D'Errico for specific directions on administration of CNB’s (in person or remote)_
 Note: for timepoint 1 you will be completing LiBI CNB on CAPA-day and only EXECTS CNB on scan-day. For T2/T3 you will complete BOTH LiBI and EXECTS 
 
@@ -57,7 +60,7 @@ Note: for timepoint 1 you will be completing LiBI CNB on CAPA-day and only EXECT
 **Reminder: as per CNB training remember to go back to “validate session” and fill in any notes on the assessment**
 <img src="/executivefunction/assets/images/EF33.png" alt="CNBs">
 
-### VARIABILITY
+### Variability
 1. On the EF laptop, enter the common password, go to the IIV battery folder on the desktop
 2. Go to log_files and create a new folder outside “TIMEPOINT1” and “TIMEPOINT2”: BBLID for T1, BBLID_SCANID for T2
 3. Attach the EF console to the computer via the wire
@@ -69,7 +72,7 @@ Note: for timepoint 1 you will be completing LiBI CNB on CAPA-day and only EXECT
     - Disconnect and reconnect the variability apparatus and start again
     - Make sure the log file is not within the “TIMEPOINT 1” or “TIMEPOINT 2” folders
 
-### SELF-REPORT QUESTIONNAIRE ADMINISTRATION
+### Self-Report Questionnaire Administration
 1. Note: Both child and parent will be completing self report questionnaires. The proband scales are 3 surveys, the child will be more depending on the timepoint how many
 2. Navigate to RedCap at the link [here](https://axis.med.upenn.edu/), sign in with your RedCap credentials and select project titled: “Common Self Report Scales #collection”
 3. Click “Add/Edit Records” on the left side panel and enter the BBL ID and select the scales with the Redcap ID that you generated through oracle 
@@ -92,16 +95,16 @@ Note: for timepoint 1 you will be completing LiBI CNB on CAPA-day and only EXECT
 - For participants under the age of 18, we stay in the room so we’re close by for questions. For very young children (e.g., younger than 10) you will likely want to proctor the scales administration (i.e., read each question aloud - specify that in the notes section). For older participants (i.e., 18 and older) it’s OK to tell the participant you’ll wait outside and are nearby if they have questions.
 - You should make a REDCap report so you can follow along when the forms are marked as complete (please reach out to the CRM so they can show you how to create this if one is not already created). This is to ensure 1) they are moving along and not stuck 2) that they are attentively answering questions and not distracted3) they’re not just clicking the same answer over and over just to get it done. 
 
-### PRE-SCAN ITEMS
+## Pre-Scan Items
 1. **Practice task: [duration = 3-5 min.]:**
- - Using the EF small black HP laptop, go through the practice N-Back task that they will encounter during the scan
+- Using the EF small black HP laptop, go through the practice N-Back task that they will encounter during the scan
    Note: This must be completed prior to the scan
 - EF Black PC Laptop → enter common password → click on EFR01 (the presentation) on the desktop → Click run scenario or run non-stop
 - You will see a page that says “Ready” – Press enter to continue
 - The instructions for the 0-Back will appear → read the instructions below, press the Space Bar to continue to 2-back → After you have completed giving the instructions press “ESC” → “Continue” → “Run non-stop” to begin the task
-
-*Instructions: “This is the n-back fractal task that you will play during the scan. In the scanner, you will have a screen that shows the task and a remote that you will hold in your dominant hand throughout the scan. In the actual scan, you will press the left blue button to respond, for right now, we will practice with you pressing the ‘B’ button on the computer keyboard. The test has two parts, we’ll practice both parts. The first part is the 0-back. Press the “B” button as fast as you can whenever you see this purple picture (point to picture). Do you have any questions about the 0-back? Great! The second part is the 2-back, press the “B” button as fast as you can whenever the picture you see is the same as the one that came two before, or two-back. You can see in this example, there is the fire picture, stripped picture, then the fire picture again. You’d press the button when you see the last fire picture because it’s the same as the one that came two before or two back (pointing throughout). Any questions before we begin the practice? Great!”*
+_Instructions: “This is the n-back fractal task that you will play during the scan. In the scanner, you will have a screen that shows the task and a remote that you will hold in your dominant hand throughout the scan. In the actual scan, you will press the left blue button to respond, for right now, we will practice with you pressing the ‘B’ button on the computer keyboard. The test has two parts, we’ll practice both parts. The first part is the 0-back. Press the “B” button as fast as you can whenever you see this purple picture (point to picture). Do you have any questions about the 0-back? Great! The second part is the 2-back, press the “B” button as fast as you can whenever the picture you see is the same as the one that came two before, or two-back. You can see in this example, there is the fire picture, stripped picture, then the fire picture again. You’d press the button when you see the last fire picture because it’s the same as the one that came two before or two back (pointing throughout). Any questions before we begin the practice? Great!”_
 *Observe practice to ensure they understand. Repeat if they do not seem to understand.* 
+{: .no_toc }
 
 2. **Radiology Check-In: [duration = 10-20 min.]**
 - 20-30 minutes before the scheduled scan time escort participant and collateral to radiology for them to be checked in (good time for participant to use the bathroom at radiology)
@@ -110,9 +113,10 @@ Note: for timepoint 1 you will be completing LiBI CNB on CAPA-day and only EXECT
 3. **Pre-Scan Self Reports: [duration = 5 min.]**
 - On RedCAP, the second set of self-reports generated from oracle will have 2 short surveys to be completed either at HUP6 or right before you go down to radiology (see notes above on axis self-report generation and administration)
 
-*Instructions: The first survey is about how you feel right now, in this moment, about to get in the scanner. Fill in the bubbles and press submit when you are finished. This will take you to a second survey. When finished, hit submit and tell me you’re done.*
+_Instructions: The first survey is about how you feel right now, in this moment, about to get in the scanner. Fill in the bubbles and press submit when you are finished. This will take you to a second survey. When finished, hit submit and tell me you’re done._
 
-### SCAN
+## Scan
+
 **Prescan setup ~10 minutes**
 
 - PROTOCOL NAME: SATTERTHWAITE→ “ABCD_32Channel”
@@ -191,7 +195,7 @@ _Notes on Scanner Motion: Scans are in the order or importance, prioritize repea
         - Template FOV→  BOLD
         - Select “reuse xForm” on the top right to re-use the T1 scans from above
 
-### MRI CLEANUP
+### MRI Cleanup
 1. Sign out of CAMRIS calendar
 2. Collect frac_back logfiles (2 files) from BBL_computer by uploading to Pennbox
 3. Ensure data has appeared on Flywheel
@@ -200,7 +204,7 @@ _Notes on Scanner Motion: Scans are in the order or importance, prioritize repea
 **GRAB CD from previous visit if you have not already**
 
 
-### FINAL VISIT PROCEDURES
+### Final Visit Procedures
 1. Post-Scan Self Reports: Completed post-scan self reports on Axis (one survey about how they feel right then in that moment) immediately following the scan
 2. W9/C2: Make sure participant signs W9 and C2, and participant rather than parent writes the name
 3. Payments: Give participant the Clincard [https://clincard.com/](https://clincard.com/) and load payment ($100 for EFT1, $150 for T2, $150 + $150 BONUS at T3)

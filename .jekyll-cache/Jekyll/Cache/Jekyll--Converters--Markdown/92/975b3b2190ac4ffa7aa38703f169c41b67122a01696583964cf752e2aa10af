@@ -1,0 +1,79 @@
+I"U<h1 class="no_toc" id="post-visit-admin">POST VISIT ADMIN</h1>
+<ul id="markdown-toc">
+  <li><a href="#data-storage" id="markdown-toc-data-storage"><strong>Data Storage</strong></a></li>
+  <li><a href="#update---link-to-tinashes-doc" id="markdown-toc-update---link-to-tinashes-doc">update - link to Tinashe’s doc</a>    <ul>
+      <li><a href="#variabilitytask-file-back-up" id="markdown-toc-variabilitytask-file-back-up"><strong>Variability/Task File Back Up</strong>:</a></li>
+    </ul>
+  </li>
+  <li><a href="#update" id="markdown-toc-update">update</a>    <ul>
+      <li><a href="#appointmentplus" id="markdown-toc-appointmentplus"><strong>AppointmentPlus</strong>:</a></li>
+      <li><a href="#axistracker" id="markdown-toc-axistracker"><strong>AxisTracker</strong>:</a></li>
+      <li><a href="#procedure-update" id="markdown-toc-procedure-update"><strong>Procedure Update</strong>:</a></li>
+      <li><a href="#misc" id="markdown-toc-misc"><strong>MISC.</strong>:</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h6 id="data-storage"><strong>Data Storage</strong></h6>
+<ol>
+  <li><a href="https://upenn.flywheel.io/">Flywheel</a>:
+    <ul>
+      <li>Navigate to Flywheel and sign in with your UPenn credentials.</li>
+      <li>Select the EFR01 Project→ then select “Sessions”.</li>
+      <li>All MRI series should appear on Flywheel because you added the Flywheel Study Comment prior to scan administration. When the data first appears on flywheel it will look like the picture below:
+<img src="/executivefunction/assets/images/EF41.png" alt="Flywheel1" /></li>
+    </ul>
+  </li>
+</ol>
+
+<ul>
+  <li><strong>Timepoint 1</strong>:
+    <ol>
+      <li>Select the scan that you just completed, click “Subject” → Copy the ScanID portion of the Label, then delete from the label to leave only the BBLID → select “Human” → Click “Save”</li>
+      <li>Next, select “Session” → Delete “BRAIN Research ^Satterthwait” Label, and paste the ScanID → Press Save
+ <img src="/executivefunction/assets/images/EF42.png" alt="Flywheel2" /></li>
+    </ol>
+  </li>
+  <li><strong>Timepoint 2</strong>: Linking to first timepoint
+    <ol>
+      <li>Select the blue check mark under “Action” to select the scan → select Action drop down → Select “Move Scan to Existing Subject” → Fill in the information as seen below, select the participant’s BBL ID from the list → hit save – this will remove the ScanID from the Subject Label
+ <img src="/executivefunction/assets/images/EF43.png" alt="Flywheel3" /></li>
+    </ol>
+  </li>
+</ul>
+
+<ol>
+  <li>Next, Select Session → Delette the Brain research label and insert the Scan ID for the scan you just completed → hit save</li>
+  <li>Running Heudiconv - BIDS - Deleting Duplicates:
+    <h1 id="update---link-to-tinashes-doc">update - link to Tinashe’s doc</h1>
+  </li>
+  <li>All Data (Task, Variability, Self Reports) final resting place is on Flywheel</li>
+</ol>
+
+<h5 id="variabilitytask-file-back-up"><strong>Variability/Task File Back Up</strong>:</h5>
+<p>Variability and the scanner task should be stored on both PennBox and the orange backup drive stored in the Purple room of Gates</p>
+<h1 id="update">update</h1>
+
+<h5 id="appointmentplus"><strong>AppointmentPlus</strong>:</h5>
+<p>Update status to completed</p>
+
+<h5 id="axistracker"><strong>AxisTracker</strong>:</h5>
+<p>Navigate to <a href="https://axis.med.upenn.edu/index.php">https://axis.med.upenn.edu/index.php</a> project titled: <strong>EFR01 Data Entry #tracker</strong> → Select “Add/Edit Record” on the left-side panel,  enter BBL in “Enter a new or Existing REDCap ID” → update admin and corresponding Scan Visit page</p>
+
+<h5 id="procedure-update"><strong>Procedure Update</strong>:</h5>
+<p>Update scan notes on Oracle by selecting “Procedures” on the left hand side → “Procedure Update” search by BBL and fill out the information in accordance with the picture below
+<img src="/executivefunction/assets/images/EF44.png" alt="IMG Update" /></p>
+
+<p><em>Note: include any scan notes in “Scan Notes” section in axis EF data tracker</em></p>
+
+<h5 id="misc"><strong>MISC.</strong>:</h5>
+<ol>
+  <li>Update google sheet EF Tracker</li>
+  <li>CNB Update: Update admin notes: update notes by going to <a href="https://webcnp.med.upenn.edu/">https://webcnp.med.upenn.edu/</a> » View results/scores » searching by BBLID and then entering comments</li>
+  <li>Study Enroll Update: On oracle, select “Study_Enroll” on left-side panel, select “StudyEnroll Update” and change study status to “in follow-up” and save</li>
+  <li>Update recruitment spreadsheet: mark participant as “1” under completed and consented</li>
+  <li>Consents: make sure to download consents from axis and save them here (afp://Coordinators/Protocols/TED_PROTOCOLS/EXECUTIVE_829744/VIRTUAL EF ASSESSMENTS/CONSENTS/)</li>
+  <li>Payments: Update travel and print receipts for clincard report</li>
+</ol>
+
+:ET

@@ -3,12 +3,15 @@ layout: default
 title: Pre-Scan Protocol
 has_children: false
 parent: Documentation
-has_toc: false
+has_toc: true
 nav_order: 3
 --- 
 
 # Pre-visit procedures
-### EPIC Order/Generating an MRN on PennChart
+{: .no_toc }
+* TOC
+{:toc}
+## EPIC Order/Generating an MRN on PennChart
 1. Search for research participant using: **MRN or Full Name and Date of Birth**. If they do not already exist in PennChart system, click “New” and fill out “Demographics” page with their address and emergency contact
 <img src="/executivefunction/assets/images/EF10.png" alt="Search for participant"> 
 
@@ -24,6 +27,8 @@ nav_order: 3
 <img src="/executivefunction/assets/images/EF12.png" alt="Study status"> 
 
 ### Creating MRI Encounter and Associating a Research Study:
+{: .no_toc }
+
 1.	Click **Encounters** in top menu bar, and select **Encounter** from dropdown menu. 
 <img src="/executivefunction/assets/images/EF13.png" alt="Encounters"> 
 
@@ -103,7 +108,7 @@ nav_order: 3
 18. Next, go to the order page and copy the order confirmation #, add this # to the “Order #” field on the CAMRIS calendar and the appointment should go from light to dark green
 # to be updated
 
-### RADIOLOGY SCHEDULING
+## Radiology Scheduling
 1. Call 215-662-3000, type 1 
 2. Say “I’d like to schedule an MRI for research”
 3. Provide patient: (a) MRN, (b) Date of Birth, (c) height/weight
@@ -113,14 +118,14 @@ Location: HUP6 (Founders Basement 2, FNDBAMR2), date/time of scan
 5. For T1→ ask to put in demographic information and supply information about parents, address, race, ethnicity, preferred language
 Note: make sure scan is being billed to research
 
-### GENERATING SCAN ID
+## Generating Scan ID
 1. Log into Oracle and go to “Procedures” on the left-hand side
 2. Select: “Procedure Store” → “IMG Store” and fill out the relevant information (see image below) and click save. Record generated procedure ID.
 Note: Visit # will be used to indicate whether scan is @ T1/2/3, for timepoint 1 scan visit #=1
 Note: click the green check next to BBLID each time to ensure you are selecting the correct BBL
 <img src="/executivefunction/assets/images/EF26.png" alt="Scan ID generation">
 
-### Generating Self-Reports: INITIATING SELF-REPORT SCALES IN ORACLE-REDCAP
+## Generating Self-Reports
 *Note: In order to generate SR scales, they must be enrolled in EF (this should have been completed during intake CAPA, if not, see below for study-enroll procedures)*
 *Note: For those over 18, no collateral self-reports are required to be generated or administered*
 *For issues troubleshooting Redcap contact Sage Rush or Scott Troyan
@@ -141,7 +146,7 @@ Note: click the green check next to BBLID each time to ensure you are selecting 
 # will be updated
 <img src="/executivefunction/assets/images/EF28.png" alt="scales">
 
-### FOLDER PREPARATION
+## Folder Preparation
 Prepare the following paper copy printouts before the MRI Visit, all of the following documents can be found on Saturn (Saturn/Coordinators/Protocols/TED_PROTOCOLS/EXECUTIVE_829744/subjectfolder)
 - Admin Folder: C2 Form, W9 Form, Clincard, CNB Notes Sheet (LiBI/Executive)
 - MRI Folder: MRI Screener, MRI Session Record
