@@ -6,11 +6,11 @@ parent: Documentation
 has_toc: true
 nav_order: 1
 ---
-* TOC
-{:toc}
+
 
 # T1 Recruitment
-
+* TOC
+{:toc}
 ### Navigating to Recruitment Sheet on LiBI Drive
 *Note: Nina Laney is the point person for access to the LiBI drive* 
 
@@ -59,7 +59,7 @@ For each participant in the recruitment spreadsheet, you must first check their 
 
 
 
-#### ** 1. Recruitment Call script**:
+#### **1. Recruitment Call script**:
 
 Hi, am I speaking with XX’s parent? My name is XX,  calling from the Children’s Hospital of Philadelphia. We would like to invite your XX to participate in a paid research study with us.  If you’re interested, do you have some time right now to talk about it? 
 [No]
@@ -78,15 +78,15 @@ No worries. Would you mind explaining why this isn’t of interest to you? (Log 
 [Yes]
 Thank you … [continue into next steps, see “Recruitment Call” section below]
 
-#### ** 2. Voicemail template**: 
+#### **2. Voicemail template**: 
 
 Hi, my name is XX from the Children's Hospital of Philadelphia. Your child may be eligible to participate in a paid research study with us. Please give me a call or text back at +1 XX. Again, that’s +1 XX. Thank you. 
 
-#### ** 3. Text template (tweak as needed)**: 
+#### **3. Text template (tweak as needed)**: 
 
 Hello XX ! This is XX from the Children's Hospital of Philadelphia. Your child may be eligible to participate in a paid research study with us. If this is of interest to you, please let me know when you would have the availability for a call. 
 
-#### ** 4. Recruitment Email template (for potential parents)**: 
+#### **4. Recruitment Email template (for potential parents)**: 
 
 The Lifespan Brain Institute (LiBI) of CHOP and UPenn would like to invite you and your child to participate in a paid research study. Our LiBI researchers hope to learn more about how the brain grows and develops over time, and how those changes relate to the way that children think and solve problems. 
  
@@ -102,7 +102,7 @@ All the best,
 Xxx xxxx
  
 
-#### ** 5. Scheduling Email Template (to parents)**:
+#### **5. Scheduling Email Template (to parents)**:
 
 Dear parent and participant,
  
@@ -127,7 +127,7 @@ If you have any questions, feel free to call or text me at xxx-xxx-xxxx. Thank y
 Best,
 Xxx xxxx
 
-#### ** 6. Scheduling Email Template (to assessors)**:
+#### **6. Scheduling Email Template (to assessors)**:
 
 Hi assessors,
  
