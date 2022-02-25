@@ -16,8 +16,9 @@ The date that each participant is due for their 2nd timepoint is listed in the s
 ### T2 Recruitment Process
 #### **SCRIPT**:
  “Hi, may I please speak with [proband/parent’s name]?  My name is _________, I am calling from the University of Pennsylvania. 
-I am calling from the Brain Behavior Lab where _____ participated in the first timepoint of our research MRI study. We are now calling to recruit for our second timepoint and were hoping that you would be interested in coming in! The second timepoint would involved one, 4-6 hour visit to the Hospital of the University of Pennsylvania and we would complete many of the same activities as the first timepoint including memory and puzzle like games on the computer, self-report questionnaires, and the 1-hour MRI scan. You would be compensated $150 fro all activities and You/your child will also be reimbursed for any travel costs (transportation and parking). Does that sound like something you would be interested in?”
-If they are interested, parents must complete the Fullscreen (on Oracle) and the MRI screener again to confirm their child’s eligibility
+I am calling from the University of Pennsylvania where _____ participated in the first timepoint of our research MRI study. We are now calling to recruit for our second timepoint and were hoping that you would be interested in coming in! The second timepoint would involved one, 4-6 hour visit to the Hospital of the University of Pennsylvania and we would complete many of the same activities as the first timepoint including memory and puzzle like games on the computer, self-report questionnaires, and the 1-hour MRI scan. You would be compensated $150 fro all activities and You/your child will also be reimbursed for any travel costs (transportation and parking). Does that sound like something you would be interested in?”
+
+If they are interested, parents must complete the Fullscreen (on Oracle) and the MRI screener again to confirm their child’s eligibility.
 
 ### Appointment Scheduling
 - **MRI Scheduling** :
@@ -27,12 +28,12 @@ If they are interested, parents must complete the Fullscreen (on Oracle) and the
     4. When you find a slot on HUP6 that aligns with assessor and participant availability click the open slot on CAMRIS to reserve your slot (_note: the MRI slot can be done at any point within the 4-6 hour visit, however, make sure to allow yourself enough time from participants arrival for consents, MRI screener form, practice task, radiology check, pre-scan self-reports – I usually leave at least 1 hour but this is up to assessor’s discretion_)
     5. Select the protocol you are scheduling for (829744)
     6. Enter “EF 32ch” in the “Title” field
-    7. Click create (you will go back and fill in the order #)
+    7. Click create and the box will turn green (within 24 hours of scheduling, you must go back and fill in the order #). See below for details. 
      <img src="/executivefunction/assets/images/EF7.png" alt="Dogfish"> 
 
 
 ### Appointment Plus Scheduling
-- Sign-in to Appointments Plus at this website: [https://www.appointmentplus.com/](https://www.appointmentplus.com/)(<img src="/executivefunction/assets/images/EF7.png" alt="Dogfish"> 
+- Sign-in to Appointment Plus at this website: [https://www.appointmentplus.com/](https://www.appointmentplus.com/)
 - Mark the correct time on the Assessor’s schedule by clicking the “+” button
 - A pop-up will appear with Appointment details – fill in BBLID, Location (HUP Main Lobby), EFR01 T2, Assessor that scheduled appointment – then click NEXT
 <img src="/executivefunction/assets/images/EF8.png" alt="AP1"> 

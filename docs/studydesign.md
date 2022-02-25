@@ -9,3 +9,4 @@ nav_order: 1
 # Design 
 This is projected to be a 5-year study, with start date contingent upon IRB approval and an end date of July 1, 2023. All participants will be assessed and imaged twice, however, participants who enroll in the first half of the project period will be able to complete a third session. Thus, participants will be assessed and scanned 2 to 3 times over 5 years in order to observe executive function during a critical period of ongoing brain development (childhood and adolescence). 
 
+Study start date: -?

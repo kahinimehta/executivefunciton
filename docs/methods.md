@@ -7,8 +7,10 @@ has_toc: false
 nav_order: 5
 ---
 # Study Measures
+This is an outline of all study procedures.
+
 ## Intake Day
--  CAPA (Interview  stored on [Axis](https://axis.med.upenn.edu/), diagnosis stored on [Oracle](https://bbldm.pmacs.upenn.edu/))
+-  CAPA (Clinical interview  stored on [Axis](https://axis.med.upenn.edu/), diagnosis stored on [Oracle](https://bbldm.pmacs.upenn.edu/))
     - Timeline
     - Demos
     - SES (Collateral only)
@@ -47,7 +49,8 @@ nav_order: 5
 
 ## Imaging Day
 - Imaging Data ([Flywheel](https://upenn.flywheel.io/#/projects))
-- [frackback Scanner Task](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4332798/) (.log stored at acquisition level on [Flywheel](https://upenn.flywheel.io/#/projects))
+    - [fracback Scanner Task](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4332798/) (.log stored at acquisition level on [Flywheel](https://upenn.flywheel.io/#/projects))
+    - PMU Data (stored as DICOM at session level on [Flywheel](https://upenn.flywheel.io/#/projects))
 - EF CNB ([WebCNP database](https://webcnp.med.upenn.edu/))
     - AIM: Abstraction Inhibition and Working Memory Test
     - DIGSYM: Digit Symbol Test
@@ -85,7 +88,7 @@ nav_order: 5
     - Tanner boy/girl; PDFs: [Female](/executivefunction/assets/selfReports/TDQF_CommonSelfReportScalesCol.pdf), [Male](/executivefunction/assets/selfReports/TDQF_CommonSelfReportScalesCol.pdf)
     - Wolf IM/EM Short; [PDF](/executivefunction/assets/selfReports/IMEMS_CommonSelfReportScalesCo.pdf)
     
-- PMU Data (stored as DICOM at session level on [Flywheel](https://upenn.flywheel.io/#/projects))
+
 
 Additional information about data and where it's stored, as per [10/04/2021](/executivefunction/assets/misc/10:4:21_GRMPY-BPD-EF Data Storage.xlsx)
 

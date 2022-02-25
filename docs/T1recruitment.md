@@ -3,23 +3,26 @@ layout: default
 title: T1 Recruitment
 has_children: false
 parent: Documentation
-has_toc: false
+has_toc: true
 nav_order: 1
 ---
+* TOC
+{:toc}
 
 # T1 Recruitment
 
 ### Navigating to Recruitment Sheet on LiBI Drive
+*Note: Nina Laney is the point person for access to the LiBI drive* 
 
 - Access the spreadsheet of potential participants via the LiBI drive
-- Sign-in to the CHOP Desktop by going to “https://connect.chop.edu/logon/LogonPoint/tmindex.html” and sign-in using your CHOP credentials → click “Desktop” on the home page to launch the virtual desktop
+- Sign-in to the CHOP Desktop by going to “https://connect.chop.edu/logon/LogonPoint/htmindex.html” and sign-in using your CHOP credentials → click “Desktop” on the home page to launch the virtual desktop
 <img src="/executivefunction/assets/images/EF1.png" alt="Sign into CHOP"> 
 
-- Click the yellow file icon on the bottom dock of the chop desktop
+- Click the yellow file icon on the bottom dock of the CHOP desktop
 <img src="/executivefunction/assets/images/EF2.png" alt="Yellow folder"> 
 
 - Select “LiBI Drive” → “Recruitment Screening” → “EF - Sophia, Kristin, Kahini” → “EF Healthy_controls_8-15_demographics_mri_10.18.2021” (Our current working list)
-_Note: To add the LiBI shared drive, from the virtual desktop open up the file explorer from the task bar on the bottom (the yellow folder icon). Then right click on ‘Network’, select ‘Map Network Drive’, then type \\ressmb01.research.chop.edu\LiBI into the folder field, then click Finish._ 
+_Note: To add the LiBI shared drive, from the virtual desktop open up the file explorer from the task bar on the bottom (the yellow folder icon). Then right click on ‘Network’, select ‘Map Network Drive’, then type //ressmb01.research.chop.edu\LiBI into the folder field, then click Finish._ 
 <img src="/executivefunction/assets/images/EF3.png" alt="Map network drive"> 
 
 - Next, on the CHOP Desktop, select the “EPIC” icon (labeled ‘Production’) to launch CHOP Epic
@@ -28,7 +31,7 @@ _Note: To add the LiBI shared drive, from the virtual desktop open up the file e
 
 ### Checking Initial Eligibility
 For each participant in the recruitment spreadsheet, you must first check their eligibility.
-- In EPIC, select “Research Studies” at the top right corner, then copy and paste the MRN from the recruitment sheet into the “Name/MRN” box and select “Find Patient” and double click on the correct participant
+- In CHOP EPIC, select “Research Studies” at the top right corner, then copy and paste the MRN from the recruitment sheet into the “Name/MRN” box and select “Find Patient” and double click on the correct participant
 <img src="/executivefunction/assets/images/EF5.png" alt="EPIC MRN Entry"> 
 
 - To determine eligibility click “Snapshot” to review general eligibility
@@ -42,7 +45,7 @@ For each participant in the recruitment spreadsheet, you must first check their 
 ### Generating Screen ID (SID)
 
 - If eligible, generate an SID in Oracle by selecting “Quickscreen” on the left side column → “Quickscreen Store”. 
-    - Make sure to put the parent’s numbers in if available, and then any mandatory information. Select “C” for control participants, and then “Quick exclude” due to “CHOP Control Excess”. 
+    - Make sure to put the parent’s numbers in if available, and then any mandatory information. Select “C” for control participants, and then “Quick exclude” due to “CHOP Control Access". 
 - When calling/emailing/texting participants, make sure to log contacts under “Contact Entry”. If parents don’t pick up, leave a voicemail.     
     - After 4 failed contacts, you can stop contacting the parents. Also log all contacts on the same spreadsheet on the LiBI drive (each row should be color-coded by contact results as mentioned on the second sheet of the spreadsheet.)
 
@@ -56,7 +59,7 @@ For each participant in the recruitment spreadsheet, you must first check their 
 
 
 
-#### **Recruitment Call script**:
+#### ** 1. Recruitment Call script**:
 
 Hi, am I speaking with XX’s parent? My name is XX,  calling from the Children’s Hospital of Philadelphia. We would like to invite your XX to participate in a paid research study with us.  If you’re interested, do you have some time right now to talk about it? 
 [No]
@@ -75,15 +78,15 @@ No worries. Would you mind explaining why this isn’t of interest to you? (Log 
 [Yes]
 Thank you … [continue into next steps, see “Recruitment Call” section below]
 
-#### **Voicemail template**: 
+#### ** 2. Voicemail template**: 
 
 Hi, my name is XX from the Children's Hospital of Philadelphia. Your child may be eligible to participate in a paid research study with us. Please give me a call or text back at +1 XX. Again, that’s +1 XX. Thank you. 
 
-Text template (tweak as needed): 
+#### ** 3. Text template (tweak as needed)**: 
 
 Hello XX ! This is XX from the Children's Hospital of Philadelphia. Your child may be eligible to participate in a paid research study with us. If this is of interest to you, please let me know when you would have the availability for a call. 
 
-Recruitment Email template (for potential parents): 
+#### ** 4. Recruitment Email template (for potential parents)**: 
 
 The Lifespan Brain Institute (LiBI) of CHOP and UPenn would like to invite you and your child to participate in a paid research study. Our LiBI researchers hope to learn more about how the brain grows and develops over time, and how those changes relate to the way that children think and solve problems. 
  
@@ -99,7 +102,7 @@ All the best,
 Xxx xxxx
  
 
-#### **Scheduling Email Template (to parents)**:
+#### ** 5. Scheduling Email Template (to parents)**:
 
 Dear parent and participant,
  
@@ -124,7 +127,7 @@ If you have any questions, feel free to call or text me at xxx-xxx-xxxx. Thank y
 Best,
 Xxx xxxx
 
-#### **Scheduling Email Template (to assessors)**:
+#### ** 6. Scheduling Email Template (to assessors)**:
 
 Hi assessors,
  
@@ -143,20 +146,21 @@ After explaining the study using the recruitment script above, if participant in
 - **Complete FullScreen**: Select “Full Screen” on Oracle left hand side → “Full Screen Store” and enter BBLID → read through the short blurb to ensure they consent to screen
     - Complete Full Screen With **SHORT PRIME**. Note: You may skip motivation, “Social Media Usage” and “Substance Use sections”
 - At the end, if participant is eligible select “Eligible” and “Complete MRI”
-- **Complete MRI Screener**: On oracle select “FullScreen” → “MRIScreener Store” → Enter the BBL and select “Long Form” 
+- **Complete MRI Screener**: On oracle select “FullScreen” → “MRIScreener Store” → Enter the BBL and select “Short Form” 
 - **Complete Digital Access Screener**: On oracle select “Fullscreen” → “DigitAccess Store” and complete the survey 
-- **Scheduling**: If the answers on the above screeners are passed and they are eligible (see eligibility criteria HERE) check with Assessors on their availability and proceed to scheduling (see notes below on how to scheduled using Appointments Plus)
+- **Scheduling**: If the answers on the above screeners are passed and they are eligible check with Assessors on their availability and proceed to scheduling (see notes below on how to scheduled using Appointments Plus)
     - You will be scheduling the CAPA and CNB for their first clinical visit (note: after their CAPA the assessor will schedule the participant for the in-person MRI visit)
     - Note: Remind the participant to save your number because you will be getting in touch with them about appointment reminders
-- **Generating Collateral SID/BBLIDs**: You may wait until after you hang up with participant to complete this. On Oracle, select “Quickscreen” → “Quickscreen store” → Enter minimal information and mark as COLLATERAL → Go to GetBBL and mark as Collateral  We should also mention here what to do if that box doesn’t pop up, then you just kinda put in the famid of the proband
+- **Generating Collateral SID/BBLIDs**: You may wait until after you hang up with participant to complete this. On Oracle, select “Quickscreen” → “Quickscreen store” → Enter minimal information and mark as COLLATERAL → Go to GetBBL and mark as Collateral.  
 
 
-### Scheduling the visit on Appointments Plus
-1. Appointments Plus
-Sign in to Appointments Plus (sometimes referred to as AP), at this weblink: [https://www.appointmentplus.com/](https://www.appointmentplus.com/)
+### Scheduling the visit on Appointment Plus
+1. Appointment Plus: 
+Sign in to Appointment Plus (sometimes referred to as AP), at this weblink: [https://www.appointmentplus.com/](https://www.appointmentplus.com/)
 2. Schedule assessors for the date, with the generated Proband/Collateral ID
 
 #### **Appointment-Plus Notes Template**:
+# add in information about types of appointments + screenshots
 - **For proband**: 
 BBLID
 Executive Function
@@ -187,8 +191,8 @@ Participant plans to complete appointment in room using personal laptop. Mom wil
 
 ### Appointment Reminders:
 When the visit is first scheduled, you will send a confirmation email to parents and assessors following the recruitment call (see templates above). Before the appointment, you will contact the participant for reminders at 1-week (call), 2-day (text) and 1-day (call) prior to the appointment date. See templates/scripts for reminders below:
-
-- 1-Week Reminder:  call ppt to confirm
+---
+**1-Week Reminder** :  call ppt to confirm
 
 #### **SCRIPT: Appointment Reminder (1 week before appointment)**:
  
@@ -200,9 +204,9 @@ This is for the research project we spoke about. I am calling to confirm that th
 Hi, this is [your name] from the University of Pennsylvania.  I’m calling for [proband’s name/parental name] to confirm our appointment for [date/time] at [location].  Please give me a call back when you get this message so I can confirm that you’re still planning on coming in.
  
 If this appointment no longer works for you, please call me back as soon as possible so that we can reschedule.  My number is X.  If this appointment still works for you, that’s great – I’ll give you another call the evening before your appointment and hope to speak with you then to confirm.  Again, my number is X. Thanks again for your interest in participating! 
-
+---
 **2-Day Reminder**: text ppt to confirm date/time
-
+---
 **1-Day Reminder**: call ppt to confirm, if confirmed at 1-Day mark as “confirmed” on appointment plus and send confirmation email to assessors
 - Virtual Visits: resend confirmation email to ppt with the zoom link, ensure they feel comfortable with the technology if it is a virtual session
 - In-person visits: give the following reminders…
@@ -211,6 +215,7 @@ If this appointment no longer works for you, please call me back as soon as poss
     3. Remind them to bring social security number for the C2 Form
     4. Remind them only parent and child may come to the visit (no other siblings etc. because of current COVID guidelines)
     5. Remind them that if their child is taking any stimulant medication (vyvanse, adderall, ritalin etc.) ask if they can NOT give it to their child the morning of the visit
+
 
 #### **SCRIPT: Confirmation Call (night before appointment)**
 
@@ -243,6 +248,7 @@ Make sure to log all interactions with participants in Oracle (under contact ent
 
 ### T1 Recruitment Tracking
 The EF team uses a google spreadsheet, linked here, to track enrollment for T1 and T2 **however** no PHI can be listed on this sheet. Once a participant is enrolled during the CAPA visit, they are added to the spreadsheet and details on the participant enrollment status is tracked there
+# add in link
 
 ###  Mailing out Clincard
 Contact the Assessor responsible for mailing out clincard that XX BBL has been scheduled and needs a clincard mailed to them
