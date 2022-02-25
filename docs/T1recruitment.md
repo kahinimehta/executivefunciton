@@ -194,7 +194,7 @@ When the visit is first scheduled, you will send a confirmation email to parents
 ---
 **1-Week Reminder** :  call ppt to confirm
 
-#### **Appointment Reminder (1 week before appointment) Script **:
+#### **Appointment Reminder (1 week before appointment) Script**:
  
 [If speaking to someone:]
 Hi, this is [your name] from the University of Pennsylvania.  I’m just calling with a quick appointment reminder: we’re scheduled for [date of appointment] at [time of appointment] here at the hospital for [you/proband’s name and one of his/her parents]. 
@@ -217,7 +217,7 @@ If this appointment no longer works for you, please call me back as soon as poss
     5. Remind them that if their child is taking any stimulant medication (vyvanse, adderall, ritalin etc.) ask if they can NOT give it to their child the morning of the visit
 
 
-#### **Confirmation Call (night before appointment) Script **
+#### **Confirmation Call (night before appointment) Script**
 
 [Speaking to Someone]:
 Hi, may I please speak with [proband/parent’s name]?  My name is [your name], I’m calling from the University of Pennsylvania to confirm our appointment with [proband (and his parents)] for tomorrow, [date], at [time] in [location].   
