@@ -15,8 +15,8 @@ The date that each participant is due for their 2nd timepoint is listed in the s
 
 ### T2 Recruitment Process
 #### **SCRIPT**:
- “Hi, may I please speak with [proband/parent’s name]?  My name is _________, I am calling from the University of Pennsylvania. 
-I am calling from the University of Pennsylvania where _____ participated in the first timepoint of our research MRI study. We are now calling to recruit for our second timepoint and were hoping that you would be interested in coming in! The second timepoint would involved one, 4-6 hour visit to the Hospital of the University of Pennsylvania and we would complete many of the same activities as the first timepoint including memory and puzzle like games on the computer, self-report questionnaires, and the 1-hour MRI scan. You would be compensated $150 fro all activities and You/your child will also be reimbursed for any travel costs (transportation and parking). Does that sound like something you would be interested in?”
+ “Hi, may I please speak with [proband/parent’s name]?  My name is Xxxx , I am calling from the University of Pennsylvania. 
+I am calling from the University of Pennsylvania where Xxxx participated in the first timepoint of our research MRI study. We are now calling to recruit for our second timepoint and were hoping that you would be interested in coming in! The second timepoint would involved one, 4-6 hour visit to the Hospital of the University of Pennsylvania and we would complete many of the same activities as the first timepoint including memory and puzzle like games on the computer, self-report questionnaires, and the 1-hour MRI scan. You would be compensated $150 fro all activities and You/your child will also be reimbursed for any travel costs (transportation and parking). Does that sound like something you would be interested in?”
 
 If they are interested, parents must complete the Fullscreen (on Oracle) and the MRI screener again to confirm their child’s eligibility.
 
