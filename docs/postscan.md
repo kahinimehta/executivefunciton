@@ -31,6 +31,7 @@ nav_order: 5
 2. Next, Select Session → Delete the Brain research label and insert the Scan ID for the scan you just completed → hit save 
 3. Deleting duplicates- If you had to rerun any sequence of the scan due to motion or some other error, delete the “incorrect” data from flywheel by selecting the NIFTI only and clicking the trash button.
 4. Running Fw-Heudiconv Curation 
+# link to Tinashe's documentation
     - This is done to convert data to BIDs form (see Tinshe’s documentation HERE for information on BIDs and how to set this up on your computer)
     - After renaming the scan on Flywheel (above) open up a new terminal window
     - Enter “conda activate flywheel”
