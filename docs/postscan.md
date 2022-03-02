@@ -35,10 +35,14 @@ nav_order: 5
     - After renaming the scan on Flywheel (above) open up a new terminal window
     - Enter “conda activate flywheel”
     - Navigate to where you have stored the fw-heudiconv heuristic file (this is an example) 
-    - Enter ```“cd Desktop/Informatics/Flywheel_Curation/Projects/EFR01/```
-    - Select the scan that you would like to convert by entering the follow command (XXXXX = enter scan/session ID) ```fw-heudiconv-curate -- project EFR01  -- heuristic EF_heuristic20200819.py -- session XXXXX```
+    - Enter ```cd Desktop/Informatics/Flywheel_Curation/Projects/EFR01/```
+    - Select the scan that you would like to convert by entering the follow command (XXXXX = enter scan/session ID) 
+    ```fw-heudiconv-curate -- project EFR01  -- heuristic EF_heuristic20200819.py -- session XXXXX```
+    
     This should prompt this message 
+
     ```INFO: =================: fw-heudiconv curator starting up :=================```
+
     ```INFO: Loading heuristic file...```
 
 <img src="/executivefunction/assets/images/fw-hcv.png" alt="Heudiconv">  
