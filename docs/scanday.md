@@ -32,10 +32,10 @@ nav_order: 4
 
 ### Preliminary Scan Day Procedures (to be completed right after consents)
 **Demographics**:  
+(Can do these at any time throughout the visit. Complete Demos alone with parent (see Sage Rush for SES Section Training)
 1. On oracle, select “Study Enroll” on the left-side panel → select “Demos Store” and enter the BBL
 2. Note: If they were not already enrolled during CAPA, then select “Study Enroll” and enroll them using the date they signed the consent form, when completed you will be automatically sent to the demographics page
 3. Note: There should be a demographics update at each interaction with participant (both CAPA and scan day)
-# TO BE UPDATED 
 
 **Medications**: 
 1. On Oracle, select “Medication” on the left-side panel →  select “NewCollect MedStore” and enter the BBL → select “Do medication entry”. – enter the corresponding information, visit #= the timepoint you are collecting for
@@ -73,22 +73,23 @@ Note: for timepoint 1 you will be completing LiBI CNB on CAPA-day and only EXECT
     - Make sure the log file is not within the “TIMEPOINT 1” or “TIMEPOINT 2” folders
 
 ### Self-Report Questionnaire Administration
-1. Note: Both child and parent will be completing self report questionnaires. The proband scales are 3 surveys, the child will be more depending on the timepoint how many
-2. Navigate to RedCap at the link [here](https://axis.med.upenn.edu/), sign in with your RedCap credentials and select project titled: “Common Self Report Scales #collection”
-3. Click “Add/Edit Records” on the left side panel and enter the BBL ID and select the scales with the Redcap ID that you generated through oracle 
-4. Fill out the Scales Admin page and click save and go to next form. On Scales Instructions, select “logout + Open Survey” on the top left of the screen (screenshot below) and you will review instructions verbatim with participants. (see additional notes on how to administer below)
+Note: Both child and parent will be completing self report questionnaires. The proband scales are 3 surveys, the child will be more depending on the timepoint how many. If participant is >18y/o no proband scales will be completed.
+
+1. Navigate to RedCap at the link [here](https://axis.med.upenn.edu/), sign in with your RedCap credentials and select project titled: “Common Self Report Scales #collection”
+2. Click “Add/Edit Records” on the left side panel and enter the BBL ID and select the scales with the Redcap ID that you generated through oracle 
+3. Fill out the Scales Admin page and click save and go to next form. On Scales Instructions, select “logout + Open Survey” on the top left of the screen (screenshot below) and you will review instructions verbatim with participants. **(see additional notes on how to administer below)**
 <img src="/executivefunction/assets/images/EF34.png" alt="Scales instructions">
 
-5. If participants don’t have any questions, you can click “submit” and the participant will move through the self-report scales, survey to survey until they are finished. Then they will get the below screen.
+4. If participants don’t have any questions, you can click “submit” and the participant will move through the self-report scales, survey to survey until they are finished. Then they will get the below screen.
 <img src="/executivefunction/assets/images/EF35.png" alt="STOP">
 
-6. You will then need to enter a validation code. Please also enter any notes fields you see fit. If you select any validation code other than “valid”, you must include notes as to what led to your selection.
+5. You will then need to enter a validation code. Please also enter any notes fields you see fit. If you select any validation code other than “valid”, you must include notes as to what led to your selection.
 <img src="/executivefunction/assets/images/EF36.png" alt="Validation">
 
-7. If you click past this (or the participant does) you are able to enter the validation code “offline” as well by going into the record at a later time and clicking into the form “Scales Validation”.
+6. If you click past this (or the participant does) you are able to enter the validation code “offline” as well by going into the record at a later time and clicking into the form “Scales Validation”.
 <img src="/executivefunction/assets/images/EF37.png" alt="Validation post survey">
 
-*Miscellaneous but important notes:* 
+***Miscellaneous but important notes:*** 
 - During instructions page, please reiterate to the participant that they should try to answer each question and take their best guess if they’re unsure, and that they are able to skip any questions they do not feel comfortable answering. 
 - Don’t forget to give collateral the 3 short questionnaires to fill out about the proband, preferably during a time when they are not with the proband
 - Remind participant to ask the coordinator if they have any questions about any of the questionnaires or items.
