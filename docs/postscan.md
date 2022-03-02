@@ -47,7 +47,7 @@ nav_order: 5
 
 <img src="/executivefunction/assets/images/fw-hcv.png" alt="Heudiconv">  
 
-5. All Data (Task, Variability, Self Reports) final resting place is on Flywheel
+_NOTE: All Data (Task, Variability, Self Reports) final resting place is on Flywheel_
 
 ## Variability/Task File Back Up: 
 Variability and the scanner task should be stored on both PennBox and the orange backup drive stored in the Purple room of Gates
