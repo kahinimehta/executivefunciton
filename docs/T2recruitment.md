@@ -28,8 +28,9 @@ If they are interested, parents must complete the Fullscreen (on Oracle) and the
     4. When you find a slot on HUP6 that aligns with assessor and participant availability click the open slot on CAMRIS to reserve your slot (_note: the MRI slot can be done at any point within the 4-6 hour visit, however, make sure to allow yourself enough time from participants arrival for consents, MRI screener form, practice task, radiology check, pre-scan self-reports – I usually leave at least 1 hour but this is up to assessor’s discretion_)
     5. Select the protocol you are scheduling for (829744)
     6. Enter “EF 32ch” in the “Title” field
-    7. Click create and the box will turn green (within 24 hours of scheduling, you must go back and fill in the order #). See below for details. 
+    7. Click create and the box will turn green (within 24 hours of scheduling, you must go back and fill in the order #). See EPiC ordering section for details. 
      <img src="/executivefunction/assets/images/EF7.png" alt="Dogfish"> 
+     **Note: LATE cancellations: if CAMRIS slot is not cancelled <24hrs before the appointment study will be billed $100 cancellation fee. Make sure to cancel if participant gives enough warning to cancel outside of 24 hours.**
 
 
 ### Appointment Plus Scheduling
