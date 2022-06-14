@@ -61,16 +61,19 @@ Note: for timepoint 1 you will be completing LiBI CNB on CAPA-day and only EXECT
 <img src="/executivefunction/assets/images/EF33.png" alt="CNBs">
 
 ### Variability
-1. On the EF laptop, enter the common password, go to the IIV battery folder on the desktop
-2. Go to log_files and create a new folder outside “TIMEPOINT1” and “TIMEPOINT2”: BBLID for T1, BBLID_SCANID for T2
+1. On the EF laptop, (user: Field Coordinator, password: common password using C), go to the IIV battery folder on the desktop
+2. Go to log_files and create a new folder outside “TIMEPOINT1” and “TIMEPOINT2”: labeled "BBLID_SCANID" for both T1/T2/T3 (note: T1 used to be labeled only BBLID, however, this later changed and all logfiles created are now labeled BBLID_SCANID)
 3. Attach the EF console to the computer via the wire
-4. Click on the presentation file for the IIV battery, and then when it opens up, go to “Scenario”. In the sidebar, navigate to the folder you just created, and click the “<<” button to replace the previous log file being used
-5. Then go back to the main menu, click “Continue”, and enter BBLID for T1, BBLID_SCANID for T2/T3
-6. Then,  select the first three tasks and the last one. Hit run non-stop, click “Enter” to get past “Ready…” and then “X” out, click finish, and “save experiment”
-7. Log into PennBox (or the Box with your PennKey), and move the log_file into timepoint1/2 under the Variability tasks. Also move the log file into the correct folder on the EF laptop, i.e: TIMEPOINT1 or TIMEPOINT2
-8. Troubleshooting: [in case of error]
+4. Click on the presentation file for the IIV battery, next select “Scenario” tab. In the sidebar, navigate to the folder you just created, and click the “<<” button to populate the correct folder (this ensures data will be saved in this folder)
+5. Then go back to the main menu, click “Continue”, and enter BLID_SCANID for T1/T2/T3
+6. Next DEselect, "CPT_gordon", "simple_processing", and "complex_processing". -- The only tasks selected which WILL BE administered are "Dominant", "Reaction", "CPT", and "complex_reasoning". Next, hit "run non-stop."
+7. "Ready..." will appear on the screen, press "enter" to continue. Read instructions and run through task. The next task should start automatically (if it does not- select "continue" and "run non-stop") When the next task begins you will see "Ready..." again, press "enter" and run through all tasks. 
+8. When all tasks are completed, select "Finish" and click the "X" at the top corner of the program. Select "Save Experiment."
+9. Log into PennBox (or the Box with your PennKey), and move the log_file into timepoint1/2/3 under the Variability tasks. Also move the log file into the correct folder on the EF laptop, i.e: TIMEPOINT1 or TIMEPOINT2
+10. Troubleshooting: [in case of error]
     - Disconnect and reconnect the variability apparatus and start again
     - Make sure the log file is not within the “TIMEPOINT 1” or “TIMEPOINT 2” folders
+    - David Roalf is a good contact person if you need more help troubleshooting
 
 ### Self-Report Questionnaire Administration
 Note: Both child and parent will be completing self report questionnaires. The proband scales are 3 surveys, the child will be more depending on the timepoint how many. If participant is >18y/o no proband scales will be completed.
@@ -127,7 +130,7 @@ _Instructions: The first survey is about how you feel right now, in this moment,
 <img src="/executivefunction/assets/images/EF38.png" alt="Info">
 
 1. Log into **BBL Computer** 
-Account: Presentation Password: WPboitC?
+Account: Presentation Password: common password
 
 *Set up 2-button response device* 
 - Plug in FORP into BBL_computer
@@ -142,13 +145,13 @@ Account: Presentation Password: WPboitC?
 
 *Set up frac bac task* 
 - Select “EFR01” folder on desktop → select “Subject Files” →  select either TIMEPOINT 1 or 2 and create a new folder 
-    - File naming: for T1 folder name = BBLID, for T2/T3 folder name = BBLID_SCANID
-- Go back to EFR01 folder → select “EFR01_Task” → enter BBL ID for T1 and BBLID_SCANID for T2/T3 then select “run”
+    - File naming: folder name = BBLID_SCANID (note, at T1 folders used to be titled only "BBLID" but now files at all timepoints are labeled BBLID_SCANID)
+- Go back to EFR01 folder → select “EFR01_Task” → BBLID_SCANID then select “run”
 - Click “EFR01 Task”, select “Scenarios” → on right side, scroll down and select the logfile you just created and hit the “→ ” arrow so that the name of the folder populates at the end of the file path 
-- Go back to the administration, deselect the first (crosshair) and enter either BBLID or BBLID_SCANID (for T2/T3) when it asks you the name of the experiment– this is now set up and ready to be run during the frac_back sequence
+- Go back to the administration, deselect the first (crosshair) and the last task and make surer the "f2b instructions" is highlighted. Next, enter BBLID_SCANID when it asks you the name of the experiment– this is now set up and ready to be run during the frac_back sequence
 
 2. Log into **Shared Computer**
-Account: meduser Password: meduser1
+Account: meduser
 
 _Set up Movie_ 
 - Select “EFR01_SubjectFilms” from desktop on shared computer, select movie - or DisneyPlus for Ratatouille
