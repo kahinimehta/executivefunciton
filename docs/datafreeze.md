@@ -22,7 +22,7 @@ As of April 1st, 2022, 173 parrticipantst had signed the EF consent form and par
 
 **Task data** is pulled from [Penn+Box](https://upenn.app.box.com/folder/141611592732) and Flywheel. 
 
-**Raw self report data** is pulled from the [Common Self-report Scales #collection](https://axis.med.upenn.edu/redcap_v10.3.7/index.php?pid=191) Project on Axis. Scales included in the **main battery** are pulled used  using the [EF Scan Day SR's T1/T2](https://axis.med.upenn.edu/redcap_v10.3.7/DataExport/index.php?pid=191&report_id=1327) report. Scales included in the **pre/post scan battery** are pulled using the [EF STAI S/T](https://axis.med.upenn.edu/redcap_v10.3.7/DataExport/index.php?pid=191&report_id=1331) report. 
+**Raw self report data** is pulled from the [Common Self-report Scales #collection](https://axis.med.upenn.edu/redcap_v10.3.7/index.php?pid=191) Project on Axis. Scales included in the **main battery** are pulled used  using the [EF all self reports](https://axis.med.upenn.edu/redcap_v10.3.7/DataExport/index.php?pid=191&report_id=1318) report. Scales included in the **pre/post scan battery** are pulled using the [EF STAI S/T](https://axis.med.upenn.edu/redcap_v10.3.7/DataExport/index.php?pid=191&report_id=1331) report. 
 
 **CNB Data** is pulled from both the [main WebCNP page](https://webcnp.med.upenn.edu/) and the [/WebCNP survey page](https://webcnp.med.upenn.edu/surveys/). T1 LiBI CNB data can be acccessed using the SiteID "LIBI." T2 LiBI CNB data, as well as all EXECTS battery data, can be accessed using the SiteID "EXECTS." 
 
@@ -53,6 +53,8 @@ Records not inculded in previous freezes is identified from the raw data using t
 2. To merge and organize the main battery of self reports into one file, follow the steps outlined in [merge_main_scales.ipynb](https://github.com/PennLINC/executivefunction/blob/master/datafreeze_notebooks/merge_main_scales.ipynb). 
 
 3. To merge and organize collateral self reports into one file, follow the steps outlined in [merge_collateral_scales.ipynb](https://github.com/PennLINC/executivefunction/blob/master/datafreeze_notebooks/merge_collateral_scales.ipynb).
+
+4. To merge and organize demograhic information into one file, follow the steps outlined in [merge_basic_demos.ipynb](https://github.com/PennLINC/executivefunction/blob/master/datafreeze_notebooks/merge_basic_demos.ipynb). 
 
 ### Audit Scripts
 These scripts follow the same basic logic -- using the enrollment list pulled from Axis, a series of binary spreadsheets are created to determine which measures are complete for which participants, with the goal of filling in this [google sheet](https://docs.google.com/spreadsheets/d/1DYNd1Qj7Q0s9rEqe1_ezLQwNYcPN44cORnge3UAhqF0/edit#gid=794691291). 
