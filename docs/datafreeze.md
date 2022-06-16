@@ -68,3 +68,8 @@ These scripts follow the same basic logic -- using the enrollment list pulled fr
 4. To complete an audit of the pre/post scan scales, follow the steps in [pre_post_scan_scales_audit.ipynb](https://github.com/PennLINC/executivefunction/blob/master/datafreeze_notebooks/pre_post_scan_scales_audit.ipynb).
 
 5. To complete an audit of the collateral scales, follow the steps in [collateral_scales_audit.ipynb](https://github.com/PennLINC/executivefunction/blob/master/datafreeze_notebooks/collateral_scales_audit.ipynb).
+
+6. To complete an audit of the PMU data on flywheel, follow the steps in [PMU_audit.ipynb](https://github.com/PennLINC/executivefunction/blob/master/datafreeze_notebooks/PMU_audit.ipynb).
+
+7. To complete an audit of variability data by each task, follow the steps in [variability_task_audit.ipynb](https://github.com/PennLINC/executivefunction/blob/master/datafreeze_notebooks/variability_task_audit.ipynb).
+
