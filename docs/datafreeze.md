@@ -54,7 +54,9 @@ Records not inculded in previous freezes is identified from the raw data using t
 
 3. To merge and organize collateral self reports into one file, follow the steps outlined in [merge_collateral_scales.ipynb](https://github.com/PennLINC/executivefunction/blob/master/datafreeze_notebooks/merge_collateral_scales.ipynb).
 
-4. To merge and organize demograhic information into one file, follow the steps outlined in [merge_basic_demos.ipynb](https://github.com/PennLINC/executivefunction/blob/master/datafreeze_notebooks/merge_basic_demos.ipynb). 
+4. To merge and organize demograhic information into one file, follow the steps outlined in [merge_and_audit_basic_demos.ipynb](https://github.com/PennLINC/executivefunction/blob/master/datafreeze_notebooks/merge_and_audit_basic_demos.ipynb). This script also generates and audit, following the same logic as below. 
+
+5. To organize and sort EF clinical diagnostic data, follow the steps outlined in [merge_and_audit_dx.ipynb](https://github.com/PennLINC/executivefunction/blob/master/datafreeze_notebooks/merge_and_audit_dx.ipynb). This script also generates and audit, following the same logic as below.  
 
 ### Audit Scripts
 These scripts follow the same basic logic -- using the enrollment list pulled from Axis, a series of binary spreadsheets are created to determine which measures are complete for which participants, with the goal of filling in this [google sheet](https://docs.google.com/spreadsheets/d/1DYNd1Qj7Q0s9rEqe1_ezLQwNYcPN44cORnge3UAhqF0/edit#gid=794691291). 
