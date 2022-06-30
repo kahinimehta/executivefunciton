@@ -12,6 +12,8 @@ Prior to Kristin and Sophia's departure in summer 2022, all EF data collected be
 
 Additional information on data completeness per subject can be found [here](https://docs.google.com/spreadsheets/d/1DYNd1Qj7Q0s9rEqe1_ezLQwNYcPN44cORnge3UAhqF0/edit#gid=794691291).
 
+A cover sheet summarizing all data types completeness is found [here](https://docs.google.com/spreadsheets/d/18ZaSfiucqyovmNLDmhdhHNImCrYnny4LKYgIGRzNEcY/edit#gid=0). ALL ENROLLED sheet sums data across types for every participant enrolled in EF. ALL SCANNED sheet sums data across types for every participant from whom we have acquired scan data. 
+
 ### Current Enrollment
 As of April 1st, 2022, 173 parrticipantst had signed the EF consent form and participated in intake procedures under the LiBI Protocol. 119 participants had completed T1 imaging procedures. 37 participants had completed T2 imaging procedures. 
 
