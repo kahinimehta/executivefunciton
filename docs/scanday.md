@@ -7,7 +7,7 @@ has_toc: false
 nav_order: 4
 --- 
 
-# Scan Day Protocol/ MRI Visits (work in progress)
+# [Scan Day Protocol](/executivefunction/assets/misc/satterthwaite_829328_MR Imaging.pdf)/ MRI Visits (work in progress)
 {: .no_toc }
 * TOC
 {:toc}
