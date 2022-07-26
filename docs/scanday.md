@@ -8,7 +8,7 @@ nav_order: 4
 --- 
 
 # Scan Day Protocol / MRI Visits (work in progress)
-The scan protocol is available [here](/executivefunction/assets/misc/satterthwaite_829328_MR Imaging.pdf)
+The scan protocol is available [here](/executivefunction/assets/misc/satterthwaite_829328_MR Imaging.pdf) and the EXAR file is [here](/executivefunction/assets/misc/SATTERTHWAITE_ABCD_32ch.exar1Download Binary.webloc)
 
 {: .no_toc }
 * TOC
