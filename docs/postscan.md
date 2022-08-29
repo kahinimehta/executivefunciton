@@ -38,7 +38,7 @@ nav_order: 5
     - Navigate to where you have stored the fw-heudiconv heuristic file (this is an example) 
     - Enter ```cd Desktop/Informatics/Flywheel_Curation/Projects/EFR01/```
     - Select the scan that you would like to convert by entering the follow command (XXXXX = enter scan/session ID) 
-    ```fw-heudiconv-curate -- project EFR01  -- heuristic EF_heuristic20200819.py -- session XXXXX```
+    ```fw-heudiconv-curate --project EFR01  --heuristic EF_heuristic20200819.py --session XXXXX```
     
     This should prompt this message 
 
