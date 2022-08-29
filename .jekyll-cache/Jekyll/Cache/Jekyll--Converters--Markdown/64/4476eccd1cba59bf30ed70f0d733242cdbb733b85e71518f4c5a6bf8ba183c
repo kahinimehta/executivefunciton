@@ -1,0 +1,212 @@
+I"+<h1 class="no_toc" id="pre-visit-procedures">Pre-visit procedures</h1>
+<ul id="markdown-toc">
+  <li><a href="#epic-ordergenerating-an-mrn-on-pennchart" id="markdown-toc-epic-ordergenerating-an-mrn-on-pennchart">EPIC Order/Generating an MRN on PennChart</a></li>
+  <li><a href="#to-be-updated" id="markdown-toc-to-be-updated">to be updated</a>    <ul>
+      <li><a href="#radiology-scheduling" id="markdown-toc-radiology-scheduling">Radiology Scheduling</a></li>
+      <li><a href="#generating-scan-id" id="markdown-toc-generating-scan-id">Generating Scan ID</a></li>
+      <li><a href="#generating-self-reports" id="markdown-toc-generating-self-reports">Generating Self-Reports</a></li>
+    </ul>
+  </li>
+  <li><a href="#will-be-updated" id="markdown-toc-will-be-updated">will be updated</a>    <ul>
+      <li><a href="#folder-preparation" id="markdown-toc-folder-preparation">Folder Preparation</a></li>
+    </ul>
+  </li>
+</ul>
+<h2 id="epic-ordergenerating-an-mrn-on-pennchart">EPIC Order/Generating an MRN on PennChart</h2>
+<ol>
+  <li>
+    <p>Search for research participant using: <strong>MRN or Full Name and Date of Birth</strong>. If they do not already exist in PennChart system, click “New” and fill out “Demographics” page with their address and emergency contact
+<img src="/executivefunction/assets/images/EF10.png" alt="Search for participant" /></p>
+  </li>
+  <li>
+    <p>Enter <strong>study code</strong> (IRB Number) or <strong>RBN</strong> in “Research Studies” search bar. Press enter, or click the <strong>green plus sign</strong> to “add.”
+<img src="/executivefunction/assets/images/EF11.png" alt="Research studies" /></p>
+  </li>
+  <li>
+    <p>In the participant information page:</p>
+    <ul>
+      <li>Mark <strong>status</strong> as “Consented/Enrolled” (1060)</li>
+      <li>Leave <strong>coordinator</strong> field and <strong>participant ID</strong> field blank</li>
+      <li>Enter the participant’s scheduled visit date in <strong>both start and end date</strong> fields. 
+ <em><strong>Note</strong>: this will allow you to avoid all non-study charges being sent to your queue for billing review, only charges that may be associated with your study</em></li>
+      <li>Click <strong>accept</strong>
+<img src="/executivefunction/assets/images/EF12.png" alt="Study status" /></li>
+    </ul>
+  </li>
+</ol>
+
+<h3 class="no_toc" id="creating-mri-encounter-and-associating-a-research-study">Creating MRI Encounter and Associating a Research Study:</h3>
+
+<ol>
+  <li>
+    <p>Click <strong>Encounters</strong> in top menu bar, and select <strong>Encounter</strong> from dropdown menu. 
+<img src="/executivefunction/assets/images/EF13.png" alt="Encounters" /></p>
+  </li>
+  <li>
+    <p>Type “=” to auto-populate information from most recent patient search, or select from <strong>Open Patients</strong> section at the bottom of the popup. 
+<img src="/executivefunction/assets/images/EF14.png" alt="Open patients" /></p>
+  </li>
+  <li>
+    <p>Click <strong>New</strong> within patient encounter record. 
+<img src="/executivefunction/assets/images/EF15.png" alt="New" /></p>
+  </li>
+  <li>Within the <strong>New Encounter</strong> popup, enter the following information:
+    <ul>
+      <li>Type= research noncharable</li>
+      <li>Provider= your PI or relevant MD
+        <ol>
+          <li>Ted Satterthwaite</li>
+          <li>Dan Wolf</li>
+          <li>Christian Kohler</li>
+          <li>Raquel Gur</li>
+        </ol>
+      </li>
+      <li>Department= 423 (PBH HUP Gates) 
+<img src="/executivefunction/assets/images/EF16.png" alt="Encounter" /></li>
+    </ul>
+  </li>
+  <li>
+    <p>Click the <strong>Add Order</strong> button in the lower left corner of the screen, and type <strong>70551</strong>. 
+<img src="/executivefunction/assets/images/EF17.png" alt="Add order" /></p>
+  </li>
+  <li>
+    <p>Click <strong>Database</strong> tab, From the popup menu, select <strong>MR Head WO IV Contrast</strong> (IMGMR0061). 
+<img src="/executivefunction/assets/images/EF18.png" alt="Database" /></p>
+  </li>
+  <li>Enter the following information in the procedure order popup:
+    <ul>
+      <li>Pregnant (if applicable): <strong>NO</strong></li>
+      <li>Pacemaker or ICD: <strong>NO</strong></li>
+      <li>Metallic or electronic implants or devices: <strong>NO</strong></li>
+      <li><strong>Expected date: date of MRI</strong></li>
+      <li>Reason for exam: type <strong>Research</strong></li>
+      <li>Storage: leave blank</li>
+      <li>Responsible Party: select <strong>Personal/Family</strong></li>
+      <li>Class: select <strong>Radiology</strong></li>
+      <li>Priority: select <strong>Routine</strong>
+<img src="/executivefunction/assets/images/EF19.png" alt="Order" /></li>
+    </ul>
+  </li>
+  <li>Enter <strong>SmartText</strong> into Comments field
+    <ul>
+      <li>Service Center: CAMRIS</li>
+      <li>Billing Code: IRB#</li>
+      <li>MRHDUC</li>
+      <li>Modifiers: RES, BSA, 265</li>
+      <li>Resource Code: HUP6</li>
+      <li>Dept:423</li>
+      <li>Ordering Physician: [MD listed on encounter]</li>
+      <li>CRC Contact: [Study Coordinator and phone number]</li>
+      <li>Requested Date of MRI</li>
+      <li>Requested Time of MRI
+<img src="/executivefunction/assets/images/EF20.png" alt="Order details" /></li>
+    </ul>
+  </li>
+  <li>CC Results to ordering physician</li>
+  <li>Add modifiers:
+    <ul>
+      <li>RES (“Radiology Service Center”)</li>
+      <li>BSA (“Bill to Study”)</li>
+      <li>265 (“Research No Scheduling Ticket”)</li>
+    </ul>
+  </li>
+  <li>Enter “research” in field labeled “Reason for Exam”</li>
+  <li>Close out imaging popup</li>
+  <li>Associate ICD Diagnosis
+    <ul>
+      <li>Click on Dx Association in order popup in right-corner 
+<img src="/executivefunction/assets/images/EF21.png" alt="Dx" /></li>
+    </ul>
+  </li>
+</ol>
+
+<ul>
+  <li>
+    <p>Type in z00.6 to the empty field and select any option from the populated list. 
+<img src="/executivefunction/assets/images/EF22.png" alt="z00.6" /></p>
+  </li>
+  <li>
+    <p>Check both boxes to associate dx 
+<img src="/executivefunction/assets/images/EF23.png" alt="associate dx" /></p>
+  </li>
+</ul>
+
+<ol>
+  <li>Associate research study
+    <ul>
+      <li>In the “Options” tab on the order tab, click “Research Association”
+<img src="/executivefunction/assets/images/EF24.png" alt="Research association" /></li>
+      <li>Check box associated with appropriate study and click “accept”
+<img src="/executivefunction/assets/images/EF25.png" alt="Research association acceptance" /></li>
+    </ul>
+  </li>
+  <li>On the left-hand side click “follow up” on the right side fill out PI’s name to route it directly to PI and then click on the unsigned order again and select “pend order”</li>
+  <li>After selecting “pend order”, go to “Research” tab and click “Link encounter”</li>
+  <li>Email Ted letting them know there is an order waiting to be signed</li>
+  <li>Next, go to the order page and copy the order confirmation #, add this # to the “Order #” field on the CAMRIS calendar and the appointment should go from light to dark green
+    <h1 id="to-be-updated">to be updated</h1>
+  </li>
+</ol>
+
+<h2 id="radiology-scheduling">Radiology Scheduling</h2>
+<ol>
+  <li>Call 215-662-3000, type 1</li>
+  <li>Say “I’d like to schedule an MRI for research”</li>
+  <li>Provide patient: (a) MRN, (b) Date of Birth, (c) height/weight
+Note: participant MRN’s can be found on Saturn, titled “MRN2020NEW_3” (Saturn/Coordinators/Protocols/TED_PROTOCOLS/EXECUTIVE_829744/NewMRNs)
+Location: HUP6 (Founders Basement 2, FNDBAMR2), date/time of scan</li>
+  <li>Go through medical screener again</li>
+  <li>For T1→ ask to put in demographic information and supply information about parents, address, race, ethnicity, preferred language
+Note: make sure scan is being billed to research</li>
+</ol>
+
+<h2 id="generating-scan-id">Generating Scan ID</h2>
+<ol>
+  <li>Log into Oracle and go to “Procedures” on the left-hand side</li>
+  <li>Select: “Procedure Store” → “IMG Store” and fill out the relevant information (see image below) and click save. Record generated procedure ID.
+Note: Visit # will be used to indicate whether scan is @ T1/2/3, for timepoint 1 scan visit #=1
+Note: click the green check next to BBLID each time to ensure you are selecting the correct BBL
+<img src="/executivefunction/assets/images/EF26.png" alt="Scan ID generation" /></li>
+</ol>
+
+<h2 id="generating-self-reports">Generating Self-Reports</h2>
+<p><em>Note: In order to generate SR scales, they must be enrolled in EF (this should have been completed during intake CAPA, if not, see below for study-enroll procedures)</em>
+<em>Note: For those over 18, no collateral self-reports are required to be generated or administered</em>
+<em>For issues troubleshooting Redcap contact Sage Rush or Scott Troyan
+*Notes on administration in Scan Day section</em></p>
+<ol>
+  <li>Log into Oracle and go to “REDCAP_SELFREPORT” on the left-hand side</li>
+  <li>
+    <p>Select: “Subject SelfR Store” and fill out relevant information (see image below)
+<img src="/executivefunction/assets/images/EF27.png" alt="SR store" /></p>
+  </li>
+  <li>If there is a collateral tied to the subject (and collateral scales) you will enter the collateral ID that is autogenerated on this page at the bottom of the screen.</li>
+  <li>Select enter and you will receive a “SCALEID” and a “REDCapID”.
+    <ul>
+      <li>You can use either one of these IDs to search for the record in REDCap, further explained below.</li>
+    </ul>
+  </li>
+  <li>Log into Redcap and go to the self-report scales project (most projects use <strong>Common Self-report Scales #collection</strong>)</li>
+  <li>Click View/Edit record
+    <ul>
+      <li>Under the Data Search box, search for scale session by SCALEID or REDCapID</li>
+    </ul>
+  </li>
+  <li>Fill out Scales Admin Page, mark form as complete (you can move through the instruments in REDCap by selecting “Save and Go to Next Form”</li>
+  <li>The Scales Survey Admin page is for if you want to skip certain scales (e.g., for time constraints), mark complete
+    <ul>
+      <li>Listed below are the scales administered for each timepoint, as of 4/20/2021 there is no pipeline for EF T2/T3 so you will have to manually de-select indicated scales (in red) under “Scales Survey Admin” on the left hand side and save
+        <h1 id="will-be-updated">will be updated</h1>
+        <p><img src="/executivefunction/assets/images/EF28.png" alt="scales" /></p>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="folder-preparation">Folder Preparation</h2>
+<p>Prepare the following paper copy printouts before the MRI Visit, all of the following documents can be found on Saturn (Saturn/Coordinators/Protocols/TED_PROTOCOLS/EXECUTIVE_829744/subjectfolder)</p>
+<ul>
+  <li>Admin Folder: C2 Form, W9 Form, Clincard, CNB Notes Sheet (LiBI/Executive)</li>
+  <li>MRI Folder: MRI Screener, MRI Session Record</li>
+</ul>
+:ET

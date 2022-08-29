@@ -1,0 +1,227 @@
+I"Z�<h1 id="ndar">NDAR</h1>
+
+<p>Uploading images to NDA requires a formatted spreadsheet of including information from the JSON and the file-path to NIFTI images. Using an exported BIDS dataset and PyBIDS tools, you can download and format all images from a Flywheel project for NDA upload. For periodic uploads, only T1 data is required.
+​
+In addition to a BIDS-valid dataset, either on disk or on Flywheel, you will need Demographics information pulled from Tableau, including including BBLID, SCANID, NDAR-GUID, Date of Scan, Sex, Age at Scan (in months), and Visit Number.
+​
+If using data hosted on Flywheel, start by exporting to a cluster or external hard drive using the <a href="https://docs.flywheel.io/hc/en-us/articles/360008224733-Exporting-a-BIDS-Project-using-the-CLI">/Flywheel CLI</a> and the command <code class="language-plaintext highlighter-rouge">fw export bids -p "PROJECT_NAME" ~/path/to/directory/BIDS</code>. If only sharing anatomical data  (ie:  T1w, T2w) use the <code class="language-plaintext highlighter-rouge">--data-type anat</code> call to specify. Otherwise download all data-types that are required to share.
+​
+Next, using PyBIDS/NiBABLE parse to parse file names into a CSV file of relevant information (ie: subject and session labels, data type, file name, and other imaging parameters) as follows:
+​</p>
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pip</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">bids</span><span class="w">
+</span><span class="n">from</span><span class="w"> </span><span class="n">bids</span><span class="w"> </span><span class="n">import</span><span class="w"> </span><span class="n">BIDSLayout</span><span class="w">
+</span><span class="n">from</span><span class="w"> </span><span class="n">bids.layout</span><span class="w"> </span><span class="n">import</span><span class="w"> </span><span class="n">parse_file_entities</span><span class="w">
+</span><span class="n">import</span><span class="w"> </span><span class="n">glob</span><span class="w">
+</span><span class="n">import</span><span class="w"> </span><span class="n">pandas</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">pd</span><span class="w">
+</span><span class="n">import</span><span class="w"> </span><span class="n">nibabel</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">nb</span><span class="w">
+</span><span class="n">import</span><span class="w"> </span><span class="n">json</span><span class="w">
+</span><span class="err">​</span><span class="w">
+</span><span class="c1">#set root_dir as the directory where the BIDS directory is saved, and bids_dir to the BIDS directory</span><span class="w">
+</span><span class="n">root_dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'/path/to/directory'</span><span class="w">
+</span><span class="n">bids_dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'/BIDS'</span><span class="w">
+</span><span class="c1"># make a list of all images in the BIDS directory</span><span class="w">
+</span><span class="n">all_files</span><span class="o">=</span><span class="n">glob.glob</span><span class="p">(</span><span class="n">root_dir</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">bids_dir</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">'**/**/**/**/*'</span><span class="p">)</span><span class="w">
+</span><span class="c1">#filter out jsons, as we only need niftis</span><span class="w">
+</span><span class="n">all_niftis</span><span class="o">=</span><span class="p">[]</span><span class="w">
+</span><span class="k">for</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">all_files</span><span class="o">:</span><span class="w">
+    </span><span class="k">if</span><span class="w"> </span><span class="s1">'json'</span><span class="w"> </span><span class="n">not</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">file</span><span class="o">:</span><span class="w">
+        </span><span class="n">all_niftis.append</span><span class="p">(</span><span class="n">file</span><span class="p">)</span><span class="w">
+</span><span class="c1">#length of list should be the same as # of scans</span><span class="w">
+</span><span class="n">print</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="n">all_niftis</span><span class="p">))</span><span class="w">
+</span><span class="err">​</span><span class="w">
+</span><span class="c1">#initialize list</span><span class="w">
+</span><span class="n">scans</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span><span class="w">
+</span><span class="c1">#for each file in the list, parse the information into a dictionary, add the filename + path key value pair, as well as other fields from the NIFTIS and add it to the list we just initialized</span><span class="w">
+</span><span class="err">​</span><span class="w">
+</span><span class="k">for</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">all_niftis</span><span class="o">:</span><span class="w">
+    </span><span class="n">img</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">img</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nb.load</span><span class="p">(</span><span class="n">file</span><span class="p">)</span><span class="w">
+    </span><span class="c1">#obliquity = np.any(nb.affines.obliquity(img.affine)</span><span class="w">
+                              </span><span class="c1">#&gt; 1e-4)</span><span class="w">
+    </span><span class="n">voxel_sizes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">img.header.get_zooms</span><span class="p">()</span><span class="w">
+    </span><span class="n">matrix_dims</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">img.shape</span><span class="w">
+    </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parse_file_entities</span><span class="p">(</span><span class="n">file</span><span class="p">)</span><span class="w">
+    </span><span class="n">result</span><span class="p">[</span><span class="s1">'filename'</span><span class="p">]</span><span class="o">=</span><span class="n">file</span><span class="w">
+    </span><span class="n">result</span><span class="p">[</span><span class="s2">"VoxelSizeDim1"</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">float</span><span class="p">(</span><span class="n">voxel_sizes</span><span class="p">[</span><span class="m">0</span><span class="p">])</span><span class="w">
+    </span><span class="n">result</span><span class="p">[</span><span class="s2">"VoxelSizeDim3"</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">float</span><span class="p">(</span><span class="n">voxel_sizes</span><span class="p">[</span><span class="m">2</span><span class="p">])</span><span class="w">
+    </span><span class="n">result</span><span class="p">[</span><span class="s2">"VoxelSizeDim2"</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">float</span><span class="p">(</span><span class="n">voxel_sizes</span><span class="p">[</span><span class="m">1</span><span class="p">])</span><span class="w">
+    </span><span class="n">result</span><span class="p">[</span><span class="s1">'acquisitionmatrix'</span><span class="p">]</span><span class="o">=</span><span class="n">matrix_dims</span><span class="w">
+    </span><span class="n">result</span><span class="p">[</span><span class="s2">"Dim1Size"</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">matrix_dims</span><span class="p">[</span><span class="m">0</span><span class="p">]</span><span class="w">
+    </span><span class="n">result</span><span class="p">[</span><span class="s2">"Dim2Size"</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">matrix_dims</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w">
+    </span><span class="n">result</span><span class="p">[</span><span class="s2">"Dim3Size"</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">matrix_dims</span><span class="p">[</span><span class="m">2</span><span class="p">]</span><span class="w">
+</span><span class="err">​</span><span class="w">
+    </span><span class="n">scans.append</span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="w">
+</span><span class="c1">#and convert to a dataframe and save</span><span class="w">
+</span><span class="n">df</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pd.DataFrame</span><span class="p">(</span><span class="n">scans</span><span class="p">)</span><span class="w">  
+</span><span class="n">df.to_csv</span><span class="p">(</span><span class="s1">'nda_scans.csv'</span><span class="p">,</span><span class="w"> </span><span class="n">sep</span><span class="o">=</span><span class="s1">','</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+<p>You will also need to get information on the version of dcm2nii used to convert each scan. To do this, we can use an SDK script.
+​</p>
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">import</span><span class="w"> </span><span class="n">pandas</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">pd</span><span class="w">
+</span><span class="n">import</span><span class="w"> </span><span class="n">flywheel</span><span class="w">
+</span><span class="n">fw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">flywheel.Client</span><span class="p">()</span><span class="w">
+</span><span class="err">​</span><span class="w">
+</span><span class="c1">#select the Flywheel project you are working on and iterate through all subjects and sessions</span><span class="w">
+</span><span class="n">EFProj</span><span class="o">=</span><span class="n">fw.projects.find_first</span><span class="p">(</span><span class="s1">'label=EFRO1'</span><span class="p">)</span><span class="w">
+</span><span class="n">subs</span><span class="o">=</span><span class="w"> </span><span class="n">EFProj.subjects</span><span class="p">()</span><span class="w">
+</span><span class="n">sessions</span><span class="o">=</span><span class="p">[]</span><span class="w">
+</span><span class="k">for</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">subs</span><span class="w"> </span><span class="o">:</span><span class="w">
+    </span><span class="n">tempsessions</span><span class="o">=</span><span class="n">s.sessions</span><span class="p">()</span><span class="w">
+    </span><span class="n">sessions.extend</span><span class="p">(</span><span class="n">tempsessions</span><span class="p">)</span><span class="w">
+</span><span class="err">​</span><span class="w">
+</span><span class="c1">#create a list of tuples containing session ID + dcm_version</span><span class="w">
+</span><span class="n">versions</span><span class="o">=</span><span class="p">[]</span><span class="w">
+</span><span class="k">for</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">sessions</span><span class="o">:</span><span class="w">
+  </span><span class="c1">#print(r.label)</span><span class="w">
+  </span><span class="n">acq</span><span class="o">=</span><span class="n">r.acquisitions</span><span class="p">()</span><span class="w">
+  </span><span class="c1">#print(acq)</span><span class="w">
+  </span><span class="k">for</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">acq</span><span class="o">:</span><span class="w">
+      </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fw.get</span><span class="p">(</span><span class="n">a.id</span><span class="p">)</span><span class="w">
+      </span><span class="c1">#print(a.info.keys())</span><span class="w">
+      </span><span class="n">files</span><span class="o">=</span><span class="n">a.files</span><span class="w">
+      </span><span class="n">types</span><span class="o">=</span><span class="p">[</span><span class="n">x.type</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">files</span><span class="p">]</span><span class="w">
+      </span><span class="k">for</span><span class="w"> </span><span class="n">fi</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">files</span><span class="o">:</span><span class="w">
+          </span><span class="k">if</span><span class="w"> </span><span class="s1">'T1w'</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">a.label</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="s1">'setter'</span><span class="w"> </span><span class="n">not</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">a.label</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="s1">'nifti'</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">fi.type</span><span class="o">:</span><span class="w">
+              </span><span class="c1">#print(a.label)</span><span class="w">
+              </span><span class="c1">#print(fi.name)</span><span class="w">
+              </span><span class="c1">#print(fi.info.items())</span><span class="w">
+              </span><span class="n">dcm_info</span><span class="o">=</span><span class="n">fi</span><span class="p">[</span><span class="s1">'info'</span><span class="p">]</span><span class="n">.get</span><span class="p">(</span><span class="s1">'ConversionSoftwareVersion'</span><span class="p">,</span><span class="n">None</span><span class="p">)</span><span class="w">
+              </span><span class="c1">#dict[r.label]=fi.info.items</span><span class="w">
+              </span><span class="n">versions.append</span><span class="p">((</span><span class="n">r.label</span><span class="p">,</span><span class="w"> </span><span class="s1">'dcm2niix'</span><span class="p">,</span><span class="w"> </span><span class="n">dcm_info</span><span class="p">))</span><span class="w">
+</span><span class="c1">#convert to dataframe and save as a .CSV</span><span class="w">
+</span><span class="n">df</span><span class="o">=</span><span class="n">pd.DataFrame</span><span class="p">(</span><span class="n">versions</span><span class="p">)</span><span class="w">
+</span><span class="n">df.columns</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">'a'</span><span class="p">,</span><span class="w"> </span><span class="s1">'b'</span><span class="p">,</span><span class="w"> </span><span class="s1">'c'</span><span class="p">]</span><span class="w">
+</span><span class="n">df.to_csv</span><span class="p">(</span><span class="s1">'EF_dcm_version.csv'</span><span class="p">,</span><span class="w"> </span><span class="n">sep</span><span class="o">=</span><span class="s1">','</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Finally, use R to read in the image03 template and format the information from Flywheel along with demographics from tableau to NDA specifications. Step through code, paying close attention to values that may need to be changed for specific protocols. Currently, the example included in the code is for BBL ABCD protocols (EF, Motive, etc) but may need to be changed based on specifications included in CAMRIS protocol (ie: TE in line 54, TR in line 51, or lines that assign different values for different scan types (ie: T1 vs T2 scans).<br />
+​</p>
+<div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">tidyr</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">naniar</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">car</span><span class="p">)</span><span class="w">
+</span><span class="err">​</span><span class="w">
+</span><span class="n">setwd</span><span class="p">(</span><span class="s1">'~/Desktop/informatics/ndar'</span><span class="p">)</span><span class="w">
+</span><span class="c1">#import the parsed file information from the bids directory</span><span class="w">
+</span><span class="n">nda_scans</span><span class="o">&lt;-</span><span class="n">read.csv</span><span class="p">(</span><span class="s1">'nda_scans.csv'</span><span class="p">)</span><span class="w">
+</span><span class="c1">#import data downloaded from tableau, which includes BBLID, GUID SCAN ID and date of scan</span><span class="w">
+</span><span class="n">scan_data</span><span class="o">&lt;-</span><span class="n">read.csv</span><span class="p">(</span><span class="s1">'scan_data.csv'</span><span class="p">,</span><span class="n">header</span><span class="w"> </span><span class="o">=</span><span class="nb">T</span><span class="p">,</span><span class="w"> </span><span class="n">na.strings</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="s2">""</span><span class="p">))</span><span class="w">
+</span><span class="c1">#import the image_03 template</span><span class="w">
+</span><span class="n">image03_headers</span><span class="o">&lt;-</span><span class="n">read.csv</span><span class="p">(</span><span class="s1">'image03_template.csv'</span><span class="p">,</span><span class="w"> </span><span class="n">header</span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">sep</span><span class="o">=</span><span class="s1">','</span><span class="p">)</span><span class="w">
+</span><span class="c1">#import the version #'s of the dcm2niix software, and join 2 columns together</span><span class="w">
+</span><span class="n">dcm</span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="s1">'EF_dcm_version.csv'</span><span class="p">)</span><span class="w">
+</span><span class="n">dcm</span><span class="o">&lt;-</span><span class="w"> </span><span class="n">dcm</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">unite</span><span class="p">(</span><span class="s1">'dcm_ver'</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="o">:</span><span class="n">c</span><span class="p">,</span><span class="w"> </span><span class="n">remove</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+</span><span class="err">​</span><span class="w">
+</span><span class="err">​</span><span class="w">
+</span><span class="c1"># merge BIDS info, dcm_ver and scan data into one sheet</span><span class="w">
+</span><span class="n">data</span><span class="o">&lt;-</span><span class="n">merge</span><span class="p">(</span><span class="n">nda_scans</span><span class="p">,</span><span class="w"> </span><span class="n">scan_data</span><span class="p">,</span><span class="w"> </span><span class="n">by.x</span><span class="o">=</span><span class="s1">'session'</span><span class="p">,</span><span class="w"> </span><span class="n">by.y</span><span class="o">=</span><span class="s1">'scanid'</span><span class="p">)</span><span class="w">
+</span><span class="n">data</span><span class="o">&lt;-</span><span class="n">merge</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">dcm</span><span class="p">,</span><span class="w"> </span><span class="n">by.x</span><span class="o">=</span><span class="s1">'session'</span><span class="p">,</span><span class="w"> </span><span class="n">by.y</span><span class="o">=</span><span class="s1">'a'</span><span class="p">)</span><span class="w">
+</span><span class="err">​</span><span class="w">
+</span><span class="err">​</span><span class="w">
+</span><span class="c1">#begin filling data into the template. most of this information can be found in the CAMRIS protocol or in the json files.</span><span class="w">
+</span><span class="c1">#note sections where columns are separated into 2 categories for T1 and T2 scans, and whether this will</span><span class="w">
+</span><span class="c1">#be necessary for the data submitted for your specific protocol.</span><span class="w">
+</span><span class="n">image03</span><span class="o">&lt;-</span><span class="n">data.frame</span><span class="p">(</span><span class="n">data</span><span class="o">$</span><span class="n">guid</span><span class="p">)</span><span class="w">
+</span><span class="n">image03</span><span class="o">&lt;-</span><span class="n">image03</span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">rename</span><span class="p">(</span><span class="n">subjectkey</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data.guid</span><span class="p">)</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">src_subject_id</span><span class="o">&lt;-</span><span class="n">data</span><span class="o">$</span><span class="n">bblid</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">interview_date</span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data</span><span class="o">$</span><span class="n">doscan</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">interview_age</span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data</span><span class="o">$</span><span class="n">scanagemonths</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">sex</span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data</span><span class="o">$</span><span class="n">sex</span><span class="w">
+</span><span class="c1">#keep Scan ID saved as comments</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">comments_misc</span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data</span><span class="o">$</span><span class="n">session</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_file</span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data</span><span class="o">$</span><span class="n">filename</span><span class="w">
+</span><span class="c1">#using this as a place holder at the moment</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_thumbnail_file</span><span class="o">&lt;-</span><span class="s2">""</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_description</span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">"MRI"</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">experiment_id</span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">""</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">scan_type</span><span class="o">&lt;-</span><span class="n">data</span><span class="o">$</span><span class="n">suffix</span><span class="w">
+</span><span class="c1">#recode based on NIH dictionary</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">scan_type</span><span class="p">[</span><span class="w"> </span><span class="n">image03</span><span class="o">$</span><span class="n">scan_type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'T1w'</span><span class="w"> </span><span class="p">]</span><span class="o">&lt;-</span><span class="s1">'MR structural (T1)'</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">scan_type</span><span class="p">[</span><span class="w"> </span><span class="n">image03</span><span class="o">$</span><span class="n">scan_type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'T2w'</span><span class="w"> </span><span class="p">]</span><span class="o">&lt;-</span><span class="s1">'MR structural (T2)'</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">scan_object</span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">"Live"</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_file_format</span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">"NIFTI"</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">data_file2</span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">""</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">data_file2_type</span><span class="o">&lt;-</span><span class="s2">""</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_modality</span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">"MRI"</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">scanner_manufacturer_pd</span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">"SIEMENS"</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">scanner_type_pd</span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">"MAGNETOM Prisma_fit"</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">scanner_software_versions_pd</span><span class="o">&lt;-</span><span class="s1">'VE11C'</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">magnetic_field_strength</span><span class="o">&lt;-</span><span class="s2">"3T"</span><span class="w">
+</span><span class="c1">#mri_repetition_time_pd for EF: T1= 2.5, for T2=3.2</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">mri_repetition_time_pd</span><span class="p">[</span><span class="w"> </span><span class="n">image03</span><span class="o">$</span><span class="n">scan_type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'MR structural (T1)'</span><span class="w"> </span><span class="p">]</span><span class="o">&lt;</span><span class="m">-2.5</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">mri_repetition_time_pd</span><span class="p">[</span><span class="w"> </span><span class="n">image03</span><span class="o">$</span><span class="n">scan_type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'MR structural (T2)'</span><span class="w"> </span><span class="p">]</span><span class="o">&lt;</span><span class="m">-3.2</span><span class="w">
+</span><span class="c1">#mri_echo_time_pd for T1=2.9 ms , for T2= 565 ms</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">mri_echo_time_pd</span><span class="p">[</span><span class="w"> </span><span class="n">image03</span><span class="o">$</span><span class="n">scan_type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'MR structural (T1)'</span><span class="w"> </span><span class="p">]</span><span class="o">&lt;</span><span class="m">-0.0029</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">mri_echo_time_pd</span><span class="p">[</span><span class="w"> </span><span class="n">image03</span><span class="o">$</span><span class="n">scan_type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'MR structural (T2)'</span><span class="w"> </span><span class="p">]</span><span class="o">&lt;</span><span class="m">-0.565</span><span class="w">
+</span><span class="c1">#flip_angle for T1=8.0 deg, T2=missing?</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">flip_angle</span><span class="p">[</span><span class="w"> </span><span class="n">image03</span><span class="o">$</span><span class="n">scan_type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'MR structural (T1)'</span><span class="w"> </span><span class="p">]</span><span class="o">&lt;-</span><span class="s1">'8.0 deg'</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">flip_angle</span><span class="p">[</span><span class="w"> </span><span class="n">image03</span><span class="o">$</span><span class="n">scan_type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'MR structural (T2)'</span><span class="w"> </span><span class="p">]</span><span class="o">&lt;-</span><span class="s1">'120.0 deg'</span><span class="w">
+</span><span class="c1">#acquisition_matrix</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">acquisition_matrix</span><span class="o">&lt;-</span><span class="n">data</span><span class="o">$</span><span class="n">acquisitionmatrix</span><span class="w">
+</span><span class="c1">#mri_field_of_view_pd	(dim1 x voxelsize1, dim2 x voxelsize2, dim3 x voxelsize3) or the same as acquisition matrix</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">mri_field_of_view_pd</span><span class="o">&lt;-</span><span class="n">data</span><span class="o">$</span><span class="n">acquisitionmatrix</span><span class="w">
+</span><span class="c1">#patient_position	is L0.0 A20.0 F30.0 mm for both</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">patient_position</span><span class="o">&lt;-</span><span class="s1">'L0.0 A20.0 F30.0 mm'</span><span class="w">
+</span><span class="c1">#photomet_interpret</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">photomet_interpret</span><span class="o">&lt;-</span><span class="w"> </span><span class="s1">'grayscale'</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">receive_coil</span><span class="o">&lt;-</span><span class="w"> </span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">transmit_coil</span><span class="o">&lt;-</span><span class="w"> </span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">transformation_performed</span><span class="o">&lt;-</span><span class="s1">'No'</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">transformation_type</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_history</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_num_dimensions</span><span class="o">&lt;</span><span class="m">-3</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_extent1</span><span class="o">&lt;-</span><span class="n">data</span><span class="o">$</span><span class="n">Dim1Size</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_extent2</span><span class="o">&lt;-</span><span class="n">data</span><span class="o">$</span><span class="n">Dim2Size</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_extent3</span><span class="o">&lt;-</span><span class="n">data</span><span class="o">$</span><span class="n">Dim3Size</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_extent4</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">extent4_type</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_extent5</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">extent5_type</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_unit1</span><span class="o">&lt;-</span><span class="s1">'Millimeters'</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_unit2</span><span class="o">&lt;-</span><span class="s1">'Millimeters'</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_unit3</span><span class="o">&lt;-</span><span class="s1">'Millimeters'</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_unit4</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_unit5</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_resolution1</span><span class="o">&lt;-</span><span class="n">data</span><span class="o">$</span><span class="n">VoxelSizeDim1</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_resolution2</span><span class="o">&lt;-</span><span class="n">data</span><span class="o">$</span><span class="n">VoxelSizeDim2</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_resolution3</span><span class="o">&lt;-</span><span class="n">data</span><span class="o">$</span><span class="n">VoxelSizeDim3</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_resolution4</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_resolution5</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_slice_thickness</span><span class="o">&lt;-</span><span class="s1">'1.00'</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">image_orientation</span><span class="o">&lt;-</span><span class="s1">'Sagittal'</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">qc_outcome</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">qc_description</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">qc_fail_quest_reason</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">decay_correction</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">frame_end_times</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">frame_end_unit</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">frame_start_times</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">frame_start_unit</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">pet_isotope</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">pet_tracer</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">time_diff_inject_to_image</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">time_diff_units</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">pulse_seq</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">slice_acquisition</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">software_preproc</span><span class="o">&lt;-</span><span class="n">data</span><span class="o">$</span><span class="n">dcm_ver</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">study</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">week</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">experiment_description</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">visit</span><span class="o">&lt;-</span><span class="n">data</span><span class="o">$</span><span class="n">timepoints</span><span class="w">
+</span><span class="c1">#recode to NIH dictionary</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">visit</span><span class="p">[</span><span class="w"> </span><span class="n">image03</span><span class="o">$</span><span class="n">visit</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'1'</span><span class="w"> </span><span class="p">]</span><span class="o">&lt;-</span><span class="s1">'baseline'</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">visit</span><span class="p">[</span><span class="w"> </span><span class="n">image03</span><span class="o">$</span><span class="n">visit</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'2'</span><span class="w"> </span><span class="p">]</span><span class="o">&lt;-</span><span class="s1">'followup'</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">slice_timing</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">bvek_bval_files</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">bvecfile</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">bvalfile</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">deviceserialnumber</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">procdate</span><span class="o">&lt;-</span><span class="s1">''</span><span class="w">
+</span><span class="n">image03</span><span class="o">$</span><span class="n">visnum</span><span class="o">&lt;-</span><span class="n">data</span><span class="o">$</span><span class="n">timepoints</span><span class="w">
+</span><span class="c1"># there are more fields that need to be calculated, but they are empty (conditional on other modalities)</span><span class="w">
+</span><span class="err">​</span><span class="w">
+</span><span class="n">write.csv</span><span class="p">(</span><span class="n">image03</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="o">=</span><span class="s1">'image03_NDA.csv'</span><span class="p">)</span><span class="w">
+
+</span></code></pre></div></div>
+
+<p>Once you write out the .csv, copy/paste the data into the original template from NIH, and the rest of the fields will generate blank. It is recommended to copy this data into the template downloaded directly from NDA, as the validator is extremely particular, and the headings need to match identically.</p>
+:ET
